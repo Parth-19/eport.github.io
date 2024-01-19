@@ -1,20 +1,23 @@
-<!DOCTYPE html><html lang="en"><head>
+<!DOCTYPE html>
+<html lang="en"><head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>e - Port Logistics | Home</title>
 		
 		<link href="favicon.png" type="image/x-icon" rel="shortcut icon">
 		<link href="assets/css/master.css" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
 		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+		
 		<script src="assets/plugins/jquery/jquery-1.11.3.min.js"></script>
 		<script src="assets/js/modernizr.custom.js"></script>
 		<style>
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Ubuntu', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #ffffff;
         }
 
         .slider-container {
@@ -46,125 +49,60 @@
         }
     </style>
 
-<style>
-	body {
-		margin: 0;
-		font-family: 'Arial', sans-serif;
-	}
 
-	nav {
-		background-color: #fff; /* Pinterest's navigation bar background color */
-		padding: 10px 20px;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		position: sticky;
-		top: 0;
-		z-index: 100;
-	}
-
-	.logo {
-		display: flex;
-		align-items: center;
-		text-decoration: none;
-		color: #000; /* Logo text color */
-	}
-
-	.logo img {
-		height: 32px; /* Logo image height */
-		margin-right: 8px;
-	}
-
-	.menu-icon {
-		display: none; /* Hide by default on larger screens */
-		cursor: pointer;
-		font-size: 24px;
-		color: #000; /* Hamburger icon color */
-	}
-
-	.nav-links {
-		display: flex;
-	}
-
-	.nav-links a {
-		color: #000; /* Navigation links color */
-		text-decoration: none;
-		padding: 8px 16px;
-		border-radius: 5px;
-		margin-right: 10px;
-	}
-
-	.nav-links a:hover {
-		background-color: #e1e1e1; /* Hover background color */
-	}
-
-	@media screen and (max-width: 768px) {
-		.nav-links {
-			display: none; /* Hide by default on smaller screens */
-			flex-direction: column;
-			width: 100%;
-			position: absolute;
-			background-color: #fff;
-			top: 60px;
-			left: 0;
-			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-		}
-
-		.login-btn {
-            color: #fff;
-            text-decoration: none;
-            padding: 8px 16px;
-            border-radius: 5px;
-            background-color: #e60023; /* Red color for the button */
-        }
-
-        .login-btn:hover {
-            background-color: #ff4d5a; /* Lighter red color on hover */
-        }
-
-		.nav-links.show {
-			display: flex; /* Show when menu is toggled */
-		}
-
-		.menu-icon {
-			display: block; /* Show on smaller screens */
-		}
-	}
-</style>
+</head>
+<body>
 
 
 	</head>
 
 
-	<body>
+	
 
-		<!-- Loader -->
-		<div id="page-preloader"><span class="spinner"></span></div>
-		<!-- Loader end -->
+		<body>
 
-
-		<div class="layout-theme animated-css" data-header="sticky" data-header-top="200">
-
-
-			<!-- HEADER -->
-			
-			<nav>
-				<a href="#" class="logo">
-					<img src="assets/img/eport-2.png" alt="Pinterest Logo">
-					
-				</a>
-				<div class="menu-icon" onclick="toggleMenu()">☰</div>
-				<div class="nav-links">
-					<a href="home.html">HOME</a>
-					<a href="services.html">SERVICES</a>
-					<a href="about.html">ABOUT US</a>
-					<a href="blog-post.html">BLOGS</a>
-					<a href="#profile">CAREERS</a>
-					<a href="contact.html">CONTACT US</a>
-					<a href="#login" class="login-btn">Login</a>
-				</div>
-			</nav>
-			  
+			<!-- Loader -->
+			<div id="page-preloader" style="display: none;"><span class="spinner"></span></div>
+			<!-- Loader end -->
+	
+	
+			<div class="layout-theme animated-css" data-header="sticky" data-header-top="200">
+	
+	
+				<!-- HEADER -->
+	
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12">
+							<header class="header">
+								<div class="header__wrap">
+									
+				
+									<a class="logo" href="home.html"><img class="logo__img" src="assets/img/EPort.svg" alt="Logo"></a>
+				
+									<div class="header__inner clearfix">
+										<nav class="navbar yamm">
+											<div class="navbar-header hidden-md hidden-lg hidden-sm">
+												<button type="button" data-toggle="collapse" data-target="#navbar-collapse-1" class="navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+											</div>
+											<div id="navbar-collapse-1" class="navbar-collapse collapse">
+												<ul class="nav navbar-nav">
+													<li class="active"><a href="home.html">Home</a></li>
+													<li ><a href="services.html">Services</a></li>
+													<li><a href="about.html">About Us</a></li>
+													<li><a href="blog-post.html">Blogs</a></li>
+													<li><a href="#">Careers</a></li>
+													<li><a href="contact.html">Contact us</a></li>
+												</ul>
+											</div>
+										</nav>
+										<a class="header__btn btn btn-primary btn-sm btn-effect-2" href="https://eport.freightmanager.biz/">Login in Here</a>
+									</div>
+								</div>
+							</header><!-- end header-->
+						</div><!-- end col-->
+					</div><!-- end row-->
+				</div><!-- end container-->
 						
 						
 
@@ -184,14 +122,14 @@
 						<div class="sp-layer" data-horizontal="0" data-vertical="43%" data-width="100%" data-show-transition="right" data-hide-transition="left" data-show-duration="800" data-show-delay="1000" data-hide-delay="400">
 								<div class="container">
 									<div class="main-slider__subtitle">
-										Navigate Logistics with Confidence</div>
+										Your Global Logistics Partner</div>
 									<div class="decor-2 decor-2_mod-a decor-2_mod_white"></div>
 								</div>
 						</div>
 
 						<div class="sp-layer main-slider__text" data-horizontal="0" data-vertical="55%" data-width="100%" data-height="30%" data-show-transition="up" data-hide-transition="buttom" data-show-duration="800" data-show-delay="2000" data-hide-delay="1200">
 								<div class="container">
-									<p class="hidden-xs">By maintaining &amp; monitoring our professionalism work</p>
+									<p class="hidden-xs">Seamless Solutions for Your Supply Chain Success</p>
 									<a class="btn btn_mod-b btn-effect" href="home.html"><span class="btn__inner">read more</span></a>
 								</div>
 						</div>
@@ -209,7 +147,7 @@
 						<div class="sp-layer" data-horizontal="0" data-vertical="43%" data-width="100%" data-show-transition="right" data-hide-transition="left" data-show-duration="800" data-show-delay="1000" data-hide-delay="400">
 								<div class="container">
 									<div class="main-slider__subtitle">
-										Navigate Logistics with Confidence</div>
+										Synchronized Logistics Solutions</div>
 									<div class="decor-2 decor-2_mod-a decor-2_mod_white"></div>
 								</div>
 						</div>
@@ -378,8 +316,10 @@
 								<i class="slider-thumbsnails-main__icon flaticon-ship3"></i>
 								<div class="decor-2 decor-2_mod_white"></div>
 								<div class="slider-thumbsnails-main__text">
-									<p>Tempor incididunt ut labore dolore magna aliqua sed ipsum en veniam dolor sit consectetur adipisicing elit sed ao eiusmod exercitation ullamco laboris nisi aliquip.</p>
-									<p>Mcaodo consequat duis aute irure dolor in reprehenderit voluptate velit sed esse cillum dolore.</p>
+									<span>Effortless Logistics Transition<span>
+									<p>Navigating through customs and regulations can be a maze. Our clearing and
+										forwarding service ensures a smooth transition for your goods, making the complex seem
+										simple. Trust us to clear the way for your business to reach its destination seamlessly.</p>
 								</div>
 							</div>
 						</li>
@@ -422,19 +362,7 @@
 								</div>
 							</div>
 						</li>
-						<li class="slider-thumbnails-main__item">
-							<div class="slider-thumbnails-main__img">
-								<img class="img-responsive" src="assets/media/slider-thumbsnails/5.jpg" alt="Foto">
-							</div>
-							<div class="slider-thumbnails-main__info">
-								<i class="slider-thumbsnails-main__icon flaticon-package82"></i>
-								<div class="decor-2 decor-2_mod_white"></div>
-								<div class="slider-thumbsnails-main__text">
-									<p>Tempor incididunt ut labore dolore magna aliqua sed ipsum en veniam dolor sit consectetur adipisicing elit sed ao eiusmod exercitation ullamco laboris nisi aliquip.</p>
-									<p>Mcaodo consequat duis aute irure dolor in reprehenderit voluptate velit sed esse cillum dolore.</p>
-								</div>
-							</div>
-						</li>
+					
 						<li class="slider-thumbnails-main__item">
 							<div class="slider-thumbnails-main__img">
 								<img class="img-responsive" src="assets/media/slider-thumbsnails/6.jpg" alt="Foto">
@@ -454,27 +382,24 @@
 				<div id="carousel-product" class="flexslider slider-thumbnails-nav">
 					<ul class="slides">
 						<li class="slider-thumbnails-nav__item">
-							<div class="slider-thumbnails-nav__text"><span class="decor-3 decor-3_mod-a"></span>sea freight</div>
+							<div class="slider-thumbnails-nav__text"><span class="decor-3 decor-3_mod-a"></span>Clearing</div>
 							<span class="helper-2"></span>
 						</li>
 						<li class="slider-thumbnails-nav__item">
-							<div class="slider-thumbnails-nav__text"><span class="decor-3 decor-3_mod-a"></span>road trasnsport</div>
+							<div class="slider-thumbnails-nav__text"><span class="decor-3 decor-3_mod-a"></span>Forwarding</div>
 							<span class="helper-2"></span>
 						</li>
 						<li class="slider-thumbnails-nav__item">
-							<div class="slider-thumbnails-nav__text"><span class="decor-3 decor-3_mod-a"></span>air freight</div>
+							<div class="slider-thumbnails-nav__text"><span class="decor-3 decor-3_mod-a"></span>Cargo Handling Services</div>
 							<span class="helper-2"></span>
 						</li>
 						<li class="slider-thumbnails-nav__item">
-							<div class="slider-thumbnails-nav__text"><span class="decor-3 decor-3_mod-a"></span>railway logistics</div>
+							<div class="slider-thumbnails-nav__text"><span class="decor-3 decor-3_mod-a"></span>Marine Insurance</div>
 							<span class="helper-2"></span>
 						</li>
+						
 						<li class="slider-thumbnails-nav__item">
-							<div class="slider-thumbnails-nav__text"><span class="decor-3 decor-3_mod-a"></span>packaging &amp; storage</div>
-							<span class="helper-2"></span>
-						</li>
-						<li class="slider-thumbnails-nav__item">
-							<div class="slider-thumbnails-nav__text"><span class="decor-3 decor-3_mod-a"></span>warehousing</div>
+							<div class="slider-thumbnails-nav__text"><span class="decor-3 decor-3_mod-a"></span>Warehousing Solutions</div>
 							<span class="helper-2"></span>
 						</li>
 					</ul>
@@ -482,7 +407,7 @@
 			</div><!-- end slider-thumbnails -->
 
 
-			<section class="section-default wow">
+			<section class="section_mod-a section_mod-e">
 				<div class="container">
 					<div class="row">
 						<div class="col-xs-12">
@@ -593,104 +518,10 @@
 			</div><!-- end section -->
 
 
-			<section class="section-area wow">
-				<div class="section-bg_mod-a section-title-block">
-					<div class="container">
-						<div class="row">
-							<div class="col-xs-12">
-								<h2 class="ui-title-block"><span class="ui-title-emphasis">latest from the blog</span>company news</h2>
-								<div class="decor-1"><i class="icon flaticon-airplane68"></i></div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="section-top-minus section_mod-a">
-					<div class="container">
-						<div class="row">
-							<div class="col-sm-4">
-								<article class="post post_mod-a clearfix">
-									<div class="entry-media">
-										<img class="img-responsive" src="assets/media/posts/360x272/1.jpg" alt="Foto">
-										<div class="entry-date"><a href="blog-post.html"><span class="entry-date__inner">10 feb</span><i class="icon fa fa-video-camera"></i></a></div>
-									</div>
-									<div class="entry-meta">
-										<span class="entry-meta__item">In: <a class="entry-meta__link" href="blog-post.html">Trucking, Delivery</a></span>
-										<span class="entry-meta__item"><i class="icon fa fa-comment"></i>34</span>
-									</div>
-
-									<div class="entry-main">
-										<div class="entry-header">
-											<h2 class="entry-title ui-title-inner">Lorem ipsum dolor sit consectetur</h2>
-										</div>
-										<div class="entry-content">
-											<p>Lorem ipsum dolor sit amet consectetur dipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud ...</p>
-										</div>
-										<div class="entry-footer">
-											<div class="decor-3"></div>
-											<a class="btn-link" href="blog-post.html">read more</a>
-										</div>
-									</div>
-								</article>
-							</div>
-
-							<div class="col-sm-4">
-								<article class="post post_mod-a clearfix">
-									<div class="entry-media">
-										<img class="img-responsive" src="assets/media/posts/360x272/2.jpg" alt="Foto">
-										<div class="entry-date"><a href="blog-post.html"><span class="entry-date__inner">10 feb</span><i class="icon fa fa-picture-o"></i></a></div>
-									</div>
-									<div class="entry-meta">
-										<span class="entry-meta__item">In: <a class="entry-meta__link" href="blog-post.html">cargo, warehouse</a></span>
-										<span class="entry-meta__item"><i class="icon fa fa-comment"></i>34</span>
-									</div>
-
-									<div class="entry-main">
-										<div class="entry-header">
-											<h2 class="entry-title ui-title-inner">incididunt ut labore et dolore magna</h2>
-										</div>
-										<div class="entry-content">
-											<p>Commodo consequat. Duis aute irure dolor in reprehen derit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat ...</p>
-										</div>
-										<div class="entry-footer">
-											<div class="decor-3"></div>
-											<a class="btn-link" href="blog-post.html">read more</a>
-										</div>
-									</div>
-								</article>
-							</div>
-
-							<div class="col-sm-4">
-								<article class="post post_mod-a clearfix">
-									<div class="entry-media">
-										<img class="img-responsive" src="assets/media/posts/360x272/3.jpg" alt="Foto">
-										<div class="entry-date"><a href="blog-post.html"><span class="entry-date__inner">10 feb</span><i class="icon fa fa-pencil"></i></a></div>
-									</div>
-									<div class="entry-meta">
-										<span class="entry-meta__item">In: <a class="entry-meta__link" href="blog-post.html">sea freight, air freight</a></span>
-										<span class="entry-meta__item"><i class="icon fa fa-comment"></i>34</span>
-									</div>
-
-									<div class="entry-main">
-										<div class="entry-header">
-											<h2 class="entry-title ui-title-inner">nostrud exercitation ullamco laboris</h2>
-										</div>
-										<div class="entry-content">
-											<p>Lorem ipsum dolor sit amet consectetur dipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud ...</p>
-										</div>
-										<div class="entry-footer">
-											<div class="decor-3"></div>
-											<a class="btn-link" href="blog-post.html">read more</a>
-										</div>
-									</div>
-								</article>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section><!-- end section -->
+			<!-- end section -->
 
 			<div class="marquee">
+				<br>
 				<h2 class="ui-title-block"><span class="ui-title-emphasis"></span>Our Affiliations</h2>
 				<br>
 				<div class="marquee-content"> 
@@ -929,13 +760,14 @@
 
 		<script>
 			function toggleMenu() {
-				var navLinks = document.querySelector('.nav-links');
-				navLinks.classList.toggle('show');
+			  var menuLinks = document.querySelector('.menu-links');
+			  menuLinks.classList.toggle('show');
 			}
-		</script>
-
+		  </script>
 
 		<!--SCRIPTS THEME-->
+
+
 
 		<!-- Home slider -->
 		<script src="assets/plugins/slider-pro/dist/js/jquery.sliderPro.js"></script>
