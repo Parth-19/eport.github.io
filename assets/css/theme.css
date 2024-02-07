@@ -2285,7 +2285,7 @@ p:last-child .typography-bg {
 	font-weight: 400;
 	line-height: 1.57;
 	color: #333;
-	text-transform: uppercase;
+	
 }
 
 .contacts-block_mod-a {
@@ -2355,6 +2355,7 @@ p:last-child .typography-bg {
 	font: 700 4vw/1 'Titillium Web';
 	text-align: left;
 	text-transform: uppercase;
+	text-shadow: #000;
 }
 .main-slider .sp-thumbnails {
 	width: 40px !important;
@@ -2377,7 +2378,7 @@ p:last-child .typography-bg {
 	padding-top: 4px;
 	font-size: 20px;
 	border-bottom-left-radius: 5px;
-	background-color: #333;
+	background-color: #33333300;
 	box-shadow: 1px 2px 3px 0 rgba(0, 0, 0, 0.1);
 	transition: all 0.3s;
 	text-align: center;
