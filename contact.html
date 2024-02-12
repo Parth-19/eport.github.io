@@ -2,13 +2,31 @@
 <!DOCTYPE html><html lang="en"><head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
-    <title>Contact Us | EPort Logistics</title>
+    <title>ePort Logistics | Contact Us</title>
 
     <link href="favicon.png" type="image/x-icon" rel="shortcut icon">
     <link href="assets/css/master.css" rel="stylesheet">
 
     <script src="assets/plugins/jquery/jquery-1.11.3.min.js"></script>
     <script src="assets/js/modernizr.custom.js"></script>
+    <style>
+        /* Set the size of the map container */
+        #map-container {
+            width: 1200px;
+            height: 450px;
+            margin: 50px auto 0; /* Margin on top, centered horizontally */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           
+        }
+
+        /* Set the size of the iframe to fill the container */
+        #map {
+            width: 400%;
+            height: 100%;
+        }
+    </style>
 </head>
 
 
@@ -56,7 +74,7 @@
         <div class="section-title parallax-bg parallax-light">
             <ul class="bg-slideshow">
                 <li>
-                    <div style="background-image:url(https://images.unsplash.com/photo-1534536281715-e28d76689b4d?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)" class="bg-slide"></div>
+                    <div style="background-image:url(https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2672&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)" class="bg-slide"></div>
                 </li>
             </ul>
             <div class="section__inner">
@@ -73,8 +91,10 @@
         </div><!-- end section-title -->
 
 
-        <div class="map"><img class="img-responsive" src="assets/media/map.jpg" alt="map"></div>
-
+        <div id="map-container">
+            <!-- Embedded Google Map iframe -->
+            <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.157793701764!2d80.12559031482165!3d13.006102016796427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52675a8ba87017%3A0xa3a153ca396b6973!2sE-PORT%20LOGISTICS%20PRIVATE%20LIMITED%2C%20282%2C%20MKN%20Rd%2C%20Ramapuram%2C%20Collectors%20Nagar%2C%20Alandur%2C%20Chennai%2C%20Tamil%20Nadu%20600016!5e0!3m2!1sen!2sin!4v1644603673127!5m2!1sen!2sin" frameborder="0" allowfullscreen></iframe>
+        </div>
         <div class="section_mod-c">
             <div class="container">
                 <div class="row">
@@ -190,317 +210,313 @@
        
 
 
-                            <div class="section-area parallax-bg parallax-dark wow">
-                                <ul class="bg-slideshow">
-                                    <li>
-                                        <div style="background-image:url(https://s1.1zoom.me/big0/478/Trucks_Airplane_Ships_563375_1280x800.jpg)" class="bg-slide"></div>
-                                    </li>
-                                </ul>
-                                <div class="section__inner">
-                                    <div class="container">
+        <div class="ram">
+				
+            <div class="section__inner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+
+                            <div class="section-subscribe clearfix">
+                                <div class="subscribe__inner">
+                                    <h2 class="subscribe__title">register for newsletter</h2>
+                                    <div class="subscribe__info">get latest company news</div>
+                                </div>
+                                <form class="form-subscribe" method="post">
+                                    <input class="form-subscribe__input form-control" type="text" placeholder="enter your email address" required="">
+                                    <button class="form-subscribe__btn btn btn_mod-c btn-sm btn-effect"><span class="btn__inner">Subscribe</span></button>
+                                </form>
+                                <div class="subscribe__decor decor-4"><i class="subscribe__icon icon flaticon-envelope53"></i></div>
+                            </div><!-- end subscribe -->
+
+
+                            <footer class="footer">
+                                <div class="footer-main">
+                                    <div class="section__inner">
                                         <div class="row">
-                                            <div class="col-xs-12">
-                
-                                                <div class="section-subscribe clearfix">
-                                                    <div class="subscribe__inner">
-                                                        <h2 class="subscribe__title">register for newsletter</h2>
-                                                        <div class="subscribe__info">get latest company news</div>
+                                            <div class="col-lg-5 col-md-3">
+                                                <div class="footer__section">
+                                                    <a class="footer__logo" href="home-1.html"><img src="assets/img/EPort.svg" alt="Logo"></a>
+                                                    <div class="footer__info">
+                                                        <p>e-Port Logistics, where precision meets passion. We're not just another logistics company; we're your strategic logistics partner, navigating the complex terrain of supply chains with a focus on efficiency. Our goal is simple - deliver beyond expectations, every time.  </p>
+                                                        
                                                     </div>
-                                                    <form class="form-subscribe" method="post">
-                                                        <input class="form-subscribe__input form-control" type="text" placeholder="enter your email address" required="">
-                                                        <button class="form-subscribe__btn btn btn_mod-c btn-sm btn-effect"><span class="btn__inner">Subscribe</span></button>
-                                                    </form>
-                                                    <div class="subscribe__decor decor-4"><i class="subscribe__icon icon flaticon-envelope53"></i></div>
-                                                </div><!-- end subscribe -->
-                
-                
-                                                <footer class="footer">
-                                                    <div class="footer-main">
-                                                        <div class="section__inner">
-                                                            <div class="row">
-                                                                <div class="col-lg-5 col-md-3">
-                                                                    <div class="footer__section">
-                                                                        <a class="footer__logo" href="home-1.html"><img src="assets/img/EPort.svg" alt="Logo"></a>
-                                                                        <div class="footer__info">
-                                                                            <p>e-Port Logistics, where precision meets passion. We're not just another logistics company; we're your strategic logistics partner, navigating the complex terrain of supply chains with a focus on efficiency. Our goal is simple - deliver beyond expectations, every time.  </p>
-                                                                            
-                                                                        </div>
-                                                                        <ul class="social-links social-links_mod-a list-inline">
-                                                                            
-                                                                            <li><a target="_blank" href="https://www.linkedin.com/"><i class="icons fa fa-linkedin"></i></a></li>
-                                                                            <li><a target="_blank" href="https://www.google.com/"><i class="icons fa fa-google-plus"></i></a></li>
-                                                                            
-                                                                        </ul>
+                                                    <ul class="social-links social-links_mod-a list-inline">
+                                                        
+                                                        <li><a target="_blank" href="https://www.linkedin.com/"><i class="icons fa fa-linkedin"></i></a></li>
+                                                        <li><a target="_blank" href="https://www.google.com/"><i class="icons fa fa-google-plus"></i></a></li>
+                                                        
+                                                    </ul>
+                                                </div>
+                                            </div><!-- end col -->
+
+                                            <div class="col-lg-2 col-md-3">
+                                                <section class="footer__section">
+                                                    <h3 class="footer__title">services offered</h3>
+                                                    <div class="decor-2 decor-2_mod-b decor-2_mod_white"></div>
+                                                    <ul class="footer-list list-unstyled">
+                                                        <li class="footer-list__item">
+                                                            <a class="footer-list__link" href="clearing.html">Clearing</a>
+                                                        </li>
+                                                        <li class="footer-list__item">
+                                                            <a class="footer-list__link" href="forwarding.html">Forwarding</a>
+                                                        </li>
+                                                        <li class="footer-list__item">
+                                                            <a class="footer-list__link" href="cargo.html">Cargo Handling Services</a>
+                                                        </li>
+                                                        <li class="footer-list__item">
+                                                            <a class="footer-list__link" href="marine.html">Marine Insurance</a>
+                                                        </li>
+                                                        <li class="footer-list__item">
+                                                            <a class="footer-list__link" href="warehousing.html">Warehousing Solutions</a>
+                                                        </li>
+                                                        
+                                                    </ul>
+                                                </section>
+                                            </div><!-- end col -->
+
+                                            <div class="col-lg-2 col-md-3">
+                                                <section class="footer__section">
+                                                    <h3 class="footer__title">Quick links</h3>
+                                                    <div class="decor-2 decor-2_mod-b decor-2_mod_white"></div>
+                                                    <ul class="footer-list list-unstyled">
+                                                        <li class="footer-list__item">
+                                                            <a class="footer-list__link" href="home.html">Home</a>
+                                                        </li>
+                                                        <li class="footer-list__item">
+                                                            <a class="footer-list__link" href="services.html">Services</a>
+                                                        </li>
+                                                        <li class="footer-list__item">
+                                                            <a class="footer-list__link" href="about.html">About Us</a>
+                                                        </li>
+                                                        <li class="footer-list__item">
+                                                            <a class="footer-list__link" href="blog-post.html">Blogs</a>
+                                                        </li>
+                                                        <li class="footer-list__item">
+                                                            <a class="footer-list__link" href="contact.html">Contact Us</a>
+                                                        </li>
+                                                    </ul>
+                                                </section>
+                                            </div><!-- end col -->
+
+                                            <div class="col-md-3">
+                                                <section class="footer__section">
+                                                    <h3 class="footer__title">Contact details</h3>
+                                                    <div class="decor-2 decor-2_mod-b decor-2_mod_white"></div>
+                                                    <div class="footer-contact">
+                                                        <div class="footer-contact__inner">
+                                                            <div class="footer-contact__title">e-Port Logistics Pvt Ltd – Head Office</div>
+                                                            <div class="footer-contact__info">Old No:282, New No: 401, MKN Road, Alandur, 
+                                                                Chennai 600016.</div>
+                                                            <div class="footer-contact__info">Phone: 91 44 2233 1825</div>
+                                                            <div class="footer-contact__info">Email: <a href="mailto:inquiry@domain.com">maagen@eport.in</a></div>
+                                                            <select id="addressSelect" class="form-control">
+                                                                <option >Search Branches</option>
+                                                                <option value="1">Chennai</option>
+                                                                <option value="2">Coimbatore</option>
+                                                                <option value="3">Tirupur</option>
+                                                                <option value="4">Karur</option>
+                                                                <option value="5">Thoothukudi</option>
+                                                                <option value="6">Bangalore</option>
+                                                                <option value="7">Cohin</option>
+                                                                <option value="8">Mumbai</option>
+                                                                <option value="9">Mundra</option>
+                                                                <option value="10">Delhi</option>
+                                                              </select>
+                                                              
+                                                              <div class="modal fade" id="addressModal" tabindex="-1" role="dialog" aria-labelledby="addressModalLabel" aria-hidden="true">
+                                                                <div class="modal-dialog" role="document" style="z-index: 1060;">
+                                                                  <div class="modal-content">
+                                                                    <div class="modal-header">
+                                                                      <h5 class="modal-title" id="addressModalLabel">Address Details</h5>
+                                                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                        <span aria-hidden="true">&times;</span>
+                                                                      </button>
                                                                     </div>
-                                                                </div><!-- end col -->
-                
-                                                                <div class="col-lg-2 col-md-3">
-                                                                    <section class="footer__section">
-                                                                        <h3 class="footer__title">services offered</h3>
-                                                                        <div class="decor-2 decor-2_mod-b decor-2_mod_white"></div>
-                                                                        <ul class="footer-list list-unstyled">
-                                                                            <li class="footer-list__item">
-                                                                                <a class="footer-list__link" href="clearing.html">Clearing</a>
-                                                                            </li>
-                                                                            <li class="footer-list__item">
-                                                                                <a class="footer-list__link" href="forwarding.html">Forwarding</a>
-                                                                            </li>
-                                                                            <li class="footer-list__item">
-                                                                                <a class="footer-list__link" href="cargo.html">Cargo Handling Services</a>
-                                                                            </li>
-                                                                            <li class="footer-list__item">
-                                                                                <a class="footer-list__link" href="marine.html">Marine Insurance</a>
-                                                                            </li>
-                                                                            <li class="footer-list__item">
-                                                                                <a class="footer-list__link" href="warehousing.html">Warehousing Solutions</a>
-                                                                            </li>
-                                                                            
-                                                                        </ul>
-                                                                    </section>
-                                                                </div><!-- end col -->
-                
-                                                                <div class="col-lg-2 col-md-3">
-                                                                    <section class="footer__section">
-                                                                        <h3 class="footer__title">Quick links</h3>
-                                                                        <div class="decor-2 decor-2_mod-b decor-2_mod_white"></div>
-                                                                        <ul class="footer-list list-unstyled">
-                                                                            <li class="footer-list__item">
-                                                                                <a class="footer-list__link" href="home.html">Home</a>
-                                                                            </li>
-                                                                            <li class="footer-list__item">
-                                                                                <a class="footer-list__link" href="services.html">Services</a>
-                                                                            </li>
-                                                                            <li class="footer-list__item">
-                                                                                <a class="footer-list__link" href="about.html">About Us</a>
-                                                                            </li>
-                                                                            <li class="footer-list__item">
-                                                                                <a class="footer-list__link" href="blog-post.html">Blogs</a>
-                                                                            </li>
-                                                                            <li class="footer-list__item">
-                                                                                <a class="footer-list__link" href="contact.html">Contact Us</a>
-                                                                            </li>
-                                                                        </ul>
-                                                                    </section>
-                                                                </div><!-- end col -->
-                
-                                                                <div class="col-md-3">
-                                                                    <section class="footer__section">
-                                                                        <h3 class="footer__title">Contact details</h3>
-                                                                        <div class="decor-2 decor-2_mod-b decor-2_mod_white"></div>
-                                                                        <div class="footer-contact">
-                                                                            <div class="footer-contact__inner">
-                                                                                <div class="footer-contact__title">e-Port Logistics Pvt Ltd – Head Office</div>
-                                                                                <div class="footer-contact__info">Old No:282, New No: 401, MKN Road, Alandur, 
-                                                                                    Chennai 600016.</div>
-                                                                                <div class="footer-contact__info">Phone: 91 44 2233 1825</div>
-                                                                                <div class="footer-contact__info">Email: <a href="mailto:inquiry@domain.com">maagen@eport.in</a></div>
-                                                                                <select id="addressSelect" class="form-control">
-                                                                                    <option >Search Branches</option>
-                                                                                    <option value="1">Chennai</option>
-                                                                                    <option value="2">Coimbatore</option>
-                                                                                    <option value="3">Tirupur</option>
-                                                                                    <option value="4">Karur</option>
-                                                                                    <option value="5">Thoothukudi</option>
-                                                                                    <option value="6">Bangalore</option>
-                                                                                    <option value="7">Cohin</option>
-                                                                                    <option value="8">Mumbai</option>
-                                                                                    <option value="9">Mundra</option>
-                                                                                    <option value="10">Delhi</option>
-                                                                                  </select>
-                                                                                  
-                                                                                  <div class="modal fade" id="addressModal" tabindex="-1" role="dialog" aria-labelledby="addressModalLabel" aria-hidden="true">
-                                                                                    <div class="modal-dialog" role="document" style="z-index: 1060;">
-                                                                                      <div class="modal-content">
-                                                                                        <div class="modal-header">
-                                                                                          <h5 class="modal-title" id="addressModalLabel">Address Details</h5>
-                                                                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                                                            <span aria-hidden="true">&times;</span>
-                                                                                          </button>
-                                                                                        </div>
-                                                                                        <div class="modal-body" id="addressDetails">
-                                                                                          <!-- Address details will be displayed here -->
-                                                                                        </div>
-                                                                                        <div class="modal-footer">
-                                                                                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                                                                        </div>
-                                                                                      </div>
-                                                                                    </div>
-                                                                                  </div>
-                                                                                <div class="footer-contact__note">You can also view our other branches address information by selecting branch above.</div>
-                                                                            </div>
-                                                                        </div><!-- end footer-contact -->
-                                                                    </section>
-                                                                </div><!-- end col -->
-                                                            </div><!-- end row -->
-                                                        </div><!-- end section__inner -->
-                                                    </div><!-- end footer-main -->
-                
-                
-                                                    <div class="copyright clearfix">
-                                                        <div class="copyright__inner">© 2007-2024 <a class="copyright__link" href="templines.com">e-Port Logistics Pvt. Ltd.</a> All rights reserved.</div>
-                                                        <ul class="copyright-list list-inline">
-                                                            <li class="copyright-list__item">
-                                                                <a class="copyright-list__link" href="home.html">Terms of Use</a>
-                                                            </li>
-                                                            <li class="copyright-list__item">
-                                                                <a class="copyright-list__link" href="home.html">Privacy Policy</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div><!-- end copyright -->
-                                                </footer><!-- end footer -->
-                
+                                                                    <div class="modal-body" id="addressDetails">
+                                                                      <!-- Address details will be displayed here -->
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                                    </div>
+                                                                  </div>
+                                                                </div>
+                                                              </div>
+                                                            <div class="footer-contact__note">You can also view our other branches address information by selecting branch above.</div>
+                                                        </div>
+                                                    </div><!-- end footer-contact -->
+                                                </section>
                                             </div><!-- end col -->
                                         </div><!-- end row -->
-                                    </div><!-- end container -->
-                                </div><!-- end section__inner -->
-                            </div><!-- end section-area -->
-                
-                        </div><!-- end layout-theme -->
-                
-                
-                        <!-- SCRIPTS MAIN -->
-                
-                        <script src="assets/js/jquery-migrate-1.2.1.js"></script>
-                        <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-                        <script src="assets/js/waypoints.min.js"></script>
-                        <script src="../../../xeewkVNaZQnN.com/ajax/libs/jquery-easing/GJhqBht1mlaa.3/OWJ3kkb2xCCi.js"></script>
-                        <script src="assets/js/modernizr.custom.js"></script>
-                        <script src="assets/js/cssua.min.js"></script>
-                
-                        <script>
-                            function toggleMenu() {
-                              var menuLinks = document.querySelector('.menu-links');
-                              menuLinks.classList.toggle('show');
-                            }
-                          </script>
-                
-                        <!--SCRIPTS THEME-->
-                
-                        <script>
-                            $(document).ready(function(){
-                              // Define address details
-                              var addresses = [
-                                {
-                                  address: "Old No:282, New No: 401, MKN Road, Alandur, Chennai 600016.",
-                                  tel: " 91 44 2233 1825",
-                                  fax: "+ 91 44 2256 1822",
-                                  email: "suresh@eport.in",
-                                  contactPerson: "Mr. Suresh",
-                                  mobile: "+ 91 97909 75931"
-                                },
-                                {
-                                  address: "No: 6 – First Floor, Gurusamy Nagar, Thaneerpanthal, Coimbatore",
-                                  tel: "00 91 422 2975203",
-                                  email: "bdm@eport.in",
-                                  contactPerson: "Mr. Vaidyalingam",
-                                  mobile: "+ 91 90030 19699"
-                                },
-                                {
-                                  address: "22/88, 3RD Floor, Mahalakshmi Apartment, Near Sowthambika Kalyana Mandapam, College Road, Tirupur – 641 602",
-                                  tel: "+ 91 421 2231360",
-                                  fax: "+ 91 421 4240340",
-                                  email: "rajesh@eport.in",
-                                  contactPerson: "Mr. Rajesh",
-                                  mobile: "+ 91 90030 45204"
-                                },
-                                {
-                                  address: "26/9C, Kamarajar Nagar, 3rd Main, Tuticorin – 8",
-                                  phone: "+ 91 461 2310921",
-                                  fax: "+ 91 461 2310921",
-                                  email: "kk@eport.in",
-                                  contactPerson: "Mr. Krishna Kumar",
-                                  mobile: "+ 91 90030 45208"
-                                },
-                                {
-                        address: "26/9C, Kamarajar Nagar, 3rd Main, Tuticorin – 8",
-                        phone: "00 91 461 2310921",
-                        fax: "00 91 461 2310921",
-                        email: "kk@eport.in",
-                        contactPerson: "Mr. Krishna Kumar",
-                        mobile: "00 91 90030 45208"
-                      },
-                      {
-                        address: "42/1, Ground Floor, Saraswathi Puram, Jogupalayam.Halsuru, Bangalore-560008",
-                        email: "sales1@eport.in; subramaniam@eport.in",
-                        contactPerson: "Mr. Murali Raman; Mr. Subramaniam",
-                        mobile: "00 91 78299 63644 / 00 91 95940 02354"
-                      },
-                      {
-                        address: "39/6615, First Floor,Pallath Business Centre, Kurishupally Road,Ravipuram, Cochin- 682015",
-                        contactPerson: "S.Iyer",
-                        mobile: "00 91 81390 40210"
-                      },
-                      {
-                        address: "No.30, Sai Chambers 1st floor, Sector 11, CBD Belapur, Navi Mumbai – 400614",
-                        tel: "00 91 22 27579991",
-                        email: "subramaniam@eport.in",
-                        contactPerson: "Mr. Subramaniam",
-                        mobile: "00 91 95940 02354"
-                      },
-                      {
-                        address: "No.112, First Floor, K-Sons Complex, Plot No: 108, Sector 8, Behind Olso Cinema, Gandhidham, Gujarat – 370 201",
-                        tel: "00 91 2836 226666",
-                        email: "subramaniam@eport.in",
-                        contactPerson: "Mr. Subramaniam",
-                        mobile: "00 91 95940 02354"
-                      },
-                      {
-                        address: "C/O Seastar Global Logistics Pvt Ltd, 14/6, LGF, Opp. Desh Bandhu College, Kalkaji, New Delhi – 110 019",
-                        email: "subramaniam@eport.in",
-                        contactPerson: "Mr. Subramaniam",
-                        mobile: "00 91 95940 02354"
-                      }
-                
-                              ];
-                          
-                              // Function to populate modal with address details
-                              function populateModal(index) {
-                                var address = addresses[index];
-                                var modalBody = "<p><strong>Address:</strong> " + address.address + "</p>";
-                                modalBody += "<p><strong>Tel:</strong> " + (address.tel ? address.tel : "") + "</p>";
-                                modalBody += "<p><strong>Fax:</strong> " + (address.fax ? address.fax : "") + "</p>";
-                                modalBody += "<p><strong>Email:</strong> " + address.email + "</p>";
-                                modalBody += "<p><strong>Contact Person:</strong> " + address.contactPerson + "</p>";
-                                modalBody += "<p><strong>Mobile:</strong> " + address.mobile + "</p>";
-                                $("#addressDetails").html(modalBody);
-                              }
-                          
-                             // Show modal when an option is selected
-                             $("#addressSelect").change(function(){
-                      var selectedIndex = parseInt($(this).val()) - 1;
-                      populateModal(selectedIndex);
-                      $('#addressModal').modal('show');
-                    });
-                
-                    // Append modal to body
-                    $('#addressModal').appendTo("body");
-                  });
-                </script>
-                
-                
-                          </script>
-                
-                        <!-- Home slider -->
-                        <script src="assets/plugins/slider-pro/dist/js/jquery.sliderPro.js"></script>
-                        <!-- Sliders -->
-                        <script src="assets/plugins/owl-carousel/owl.carousel.min.js"></script>
-                
-                        <script src="assets/plugins/flexslider/jquery.flexslider.js"></script>
-                        <!-- Modal -->
-                        <script src="assets/plugins/prettyphoto/js/jquery.prettyPhoto.js"></script>
-                        <!-- Select customization -->
-                        <script src="assets/plugins/bootstrap-select/dist/js/bootstrap-select.js"></script>
-                        <!-- Chart -->
-                        <script src="assets/plugins/rendro-easy-pie-chart/dist/jquery.easypiechart.min.js"></script>
-                        <!-- Animation -->
-                        <script src="assets/plugins/scrollreveal/dist/scrollreveal.min.js"></script>
-                        <!-- Menu for android-->
-                        <script src="assets/js/doubletaptogo.js"></script>
-                
-                        <!-- Custom -->
-                        <script src="assets/js/custom.js"></script>
-                
-                    
-                
-                
-                </body></html>
+                                    </div><!-- end section__inner -->
+                                </div><!-- end footer-main -->
+
+
+                                <div class="copyright clearfix">
+                                    <div class="copyright__inner">© 2007-2024 <a class="copyright__link" href="templines.com">e-Port Logistics Pvt. Ltd.</a> All rights reserved.</div>
+                                    <ul class="copyright-list list-inline">
+                                        <li class="copyright-list__item">
+                                            <a class="copyright-list__link" href="home.html">Terms of Use</a>
+                                        </li>
+                                        <li class="copyright-list__item">
+                                            <a class="copyright-list__link" href="home.html">Privacy Policy</a>
+                                        </li>
+                                    </ul>
+                                </div><!-- end copyright -->
+                            </footer><!-- end footer -->
+
+                        </div><!-- end col -->
+                    </div><!-- end row -->
+                </div><!-- end container -->
+            </div><!-- end section__inner -->
+        </div><!-- end section-area -->
+
+    </div><!-- end layout-theme -->
+
+
+    <!-- SCRIPTS MAIN -->
+
+    <script src="assets/js/jquery-migrate-1.2.1.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="../../../xeewkVNaZQnN.com/ajax/libs/jquery-easing/GJhqBht1mlaa.3/OWJ3kkb2xCCi.js"></script>
+    <script src="assets/js/modernizr.custom.js"></script>
+    <script src="assets/js/cssua.min.js"></script>
+
+    <script>
+        function toggleMenu() {
+          var menuLinks = document.querySelector('.menu-links');
+          menuLinks.classList.toggle('show');
+        }
+      </script>
+
+    <!--SCRIPTS THEME-->
+
+    <script>
+        $(document).ready(function(){
+          // Define address details
+          var addresses = [
+            {
+              address: "Old No:282, New No: 401, MKN Road, Alandur, Chennai 600016.",
+              tel: " 91 44 2233 1825",
+              fax: "+ 91 44 2256 1822",
+              email: "suresh@eport.in",
+              contactPerson: "Mr. Suresh",
+              mobile: "+ 91 97909 75931"
+            },
+            {
+              address: "No: 6 – First Floor, Gurusamy Nagar, Thaneerpanthal, Coimbatore",
+              tel: "00 91 422 2975203",
+              email: "bdm@eport.in",
+              contactPerson: "Mr. Vaidyalingam",
+              mobile: "+ 91 90030 19699"
+            },
+            {
+              address: "22/88, 3RD Floor, Mahalakshmi Apartment, Near Sowthambika Kalyana Mandapam, College Road, Tirupur – 641 602",
+              tel: "+ 91 421 2231360",
+              fax: "+ 91 421 4240340",
+              email: "rajesh@eport.in",
+              contactPerson: "Mr. Rajesh",
+              mobile: "+ 91 90030 45204"
+            },
+            {
+              address: "26/9C, Kamarajar Nagar, 3rd Main, Tuticorin – 8",
+              phone: "+ 91 461 2310921",
+              fax: "+ 91 461 2310921",
+              email: "kk@eport.in",
+              contactPerson: "Mr. Krishna Kumar",
+              mobile: "+ 91 90030 45208"
+            },
+            {
+    address: "26/9C, Kamarajar Nagar, 3rd Main, Tuticorin – 8",
+    phone: "00 91 461 2310921",
+    fax: "00 91 461 2310921",
+    email: "kk@eport.in",
+    contactPerson: "Mr. Krishna Kumar",
+    mobile: "00 91 90030 45208"
+  },
+  {
+    address: "42/1, Ground Floor, Saraswathi Puram, Jogupalayam.Halsuru, Bangalore-560008",
+    email: "sales1@eport.in; subramaniam@eport.in",
+    contactPerson: "Mr. Murali Raman; Mr. Subramaniam",
+    mobile: "00 91 78299 63644 / 00 91 95940 02354"
+  },
+  {
+    address: "39/6615, First Floor,Pallath Business Centre, Kurishupally Road,Ravipuram, Cochin- 682015",
+    contactPerson: "S.Iyer",
+    mobile: "00 91 81390 40210"
+  },
+  {
+    address: "No.30, Sai Chambers 1st floor, Sector 11, CBD Belapur, Navi Mumbai – 400614",
+    tel: "00 91 22 27579991",
+    email: "subramaniam@eport.in",
+    contactPerson: "Mr. Subramaniam",
+    mobile: "00 91 95940 02354"
+  },
+  {
+    address: "No.112, First Floor, K-Sons Complex, Plot No: 108, Sector 8, Behind Olso Cinema, Gandhidham, Gujarat – 370 201",
+    tel: "00 91 2836 226666",
+    email: "subramaniam@eport.in",
+    contactPerson: "Mr. Subramaniam",
+    mobile: "00 91 95940 02354"
+  },
+  {
+    address: "C/O Seastar Global Logistics Pvt Ltd, 14/6, LGF, Opp. Desh Bandhu College, Kalkaji, New Delhi – 110 019",
+    email: "subramaniam@eport.in",
+    contactPerson: "Mr. Subramaniam",
+    mobile: "00 91 95940 02354"
+  }
+
+          ];
+      
+          // Function to populate modal with address details
+          function populateModal(index) {
+            var address = addresses[index];
+            var modalBody = "<p><strong>Address:</strong> " + address.address + "</p>";
+            modalBody += "<p><strong>Tel:</strong> " + (address.tel ? address.tel : "") + "</p>";
+            modalBody += "<p><strong>Fax:</strong> " + (address.fax ? address.fax : "") + "</p>";
+            modalBody += "<p><strong>Email:</strong> " + address.email + "</p>";
+            modalBody += "<p><strong>Contact Person:</strong> " + address.contactPerson + "</p>";
+            modalBody += "<p><strong>Mobile:</strong> " + address.mobile + "</p>";
+            $("#addressDetails").html(modalBody);
+          }
+      
+         // Show modal when an option is selected
+         $("#addressSelect").change(function(){
+  var selectedIndex = parseInt($(this).val()) - 1;
+  populateModal(selectedIndex);
+  $('#addressModal').modal('show');
+});
+
+// Append modal to body
+$('#addressModal').appendTo("body");
+});
+</script>
+
+
+      </script>
+
+    <!-- Home slider -->
+    <script src="assets/plugins/slider-pro/dist/js/jquery.sliderPro.js"></script>
+    <!-- Sliders -->
+    <script src="assets/plugins/owl-carousel/owl.carousel.min.js"></script>
+
+    <script src="assets/plugins/flexslider/jquery.flexslider.js"></script>
+    <!-- Modal -->
+    <script src="assets/plugins/prettyphoto/js/jquery.prettyPhoto.js"></script>
+    <!-- Select customization -->
+    <script src="assets/plugins/bootstrap-select/dist/js/bootstrap-select.js"></script>
+    <!-- Chart -->
+    <script src="assets/plugins/rendro-easy-pie-chart/dist/jquery.easypiechart.min.js"></script>
+    <!-- Animation -->
+    <script src="assets/plugins/scrollreveal/dist/scrollreveal.min.js"></script>
+    <!-- Menu for android-->
+    <script src="assets/js/doubletaptogo.js"></script>
+
+    <!-- Custom -->
+    <script src="assets/js/custom.js"></script>
+
+
+
+
+</body></html>

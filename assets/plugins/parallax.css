@@ -55,10 +55,10 @@
 	width: 100%;
 }
 .parallax-light:after {
-	background-color: rgba(0, 0, 0, 0.75);
+	background-color: rgba(0, 0, 0, 0);
 }
 .parallax-dark:after {
-	background-color: rgba(0, 0, 0, 0.85);
+	background-color: rgba(0, 0, 0, 0);
 }
 .parallax-primary:after {
 	opacity: 0.9;
