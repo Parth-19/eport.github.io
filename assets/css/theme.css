@@ -1230,7 +1230,7 @@ p:last-child .typography-bg {
   }
   
   .marquee {
-  /*   overflow: hidden; */
+	overflow: hidden;
   }
   
   .marquee-content {
@@ -1241,19 +1241,20 @@ p:last-child .typography-bg {
   .marquee-item {
 	flex: 0 0 16vw;
 	margin: 0 1vw;
-  /*   flex: 0 0 20vw; */
-  /*   margin: 0 2vw; */
   }
   
   .marquee-item img {
 	display: block;
 	width: 100%;
-  /*   padding: 0 20px; */
   }
   
   @keyframes scrolling {
-	0% { transform: translateX(0); }
-	100% { transform: translatex(-144vw); }
+	0% {
+	  transform: translateX(100%);
+	}
+	100% {
+	  transform: translateX(-100%);
+	}
   }
   
   /*** Navbar ***/
@@ -1831,10 +1832,11 @@ p:last-child .typography-bg {
 	margin-bottom: 4px;
 	font-size: 11px;
 	font-weight: 700;
-	text-transform: uppercase;
+	
 }
 .list-staff__description {
 	margin-top: 22px;
+	
 }
 .list-staff__img {
 	position: relative;
