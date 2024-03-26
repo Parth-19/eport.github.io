@@ -8,6 +8,189 @@
 
 		<script src="assets/plugins/jquery/jquery-1.11.3.min.js"></script>
 		<script src="assets/js/modernizr.custom.js"></script>
+		<style>
+	..box {
+    padding: 40px 0;
+}
+
+.box .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.box .row {
+    display: flex;
+    flex-wrap: wrap; /* Ensure the cards wrap to the next line if space is insufficient */
+    justify-content: space-between; /* Ensure equal space between columns */
+}
+
+.box .col-lg-4 {
+    width: calc(33.33% - 20px); /* Adjust width for each column (minus margin) */
+    margin-bottom: 20px; /* Adjust margin as needed */
+	margin-right: 20px;
+}
+
+.box-part {
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    height: 300px; /* Fixed height for the cards */
+}
+
+.box-part .title h4 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.box-part .text {
+    line-height: 24px;
+    font-size: 14px;
+}
+
+.box-part i {
+    margin-bottom: 15px;
+    font-size: 30px;
+    color: #0090D7;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .box .col-lg-4 {
+        width: calc(50% - 20px); /* Two columns for smaller screens */
+    }
+}
+
+
+		</style>
+
+		<style>
+			.marquee {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    position: relative;
+}
+
+.marquee-content {
+    display: inline-block;
+    animation: marquee 20s linear infinite;
+}
+
+.marquee-item {
+    display: inline-block;
+    margin-right: 40px; /* Increased spacing between items */
+}
+
+/* Increase the size of the marquee items */
+.marquee-item img {
+    max-height: 150px; /* Adjust the height of the images as needed */
+    max-width: auto; /* Allow the width to adjust proportionally */
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Style for the title */
+.ui-title-block {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+		</style>
+
+<style>
+	@import url(https://fonts.googleapis.com/css?family=Roboto:300,400);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+
+/* Styles for the Testimonial section */
+.testimonials-container {
+margin: 0 auto; /* Horizontally centers the container */
+max-width: 1200px;
+padding: 20px;
+text-align: center; /* Centers the contents inside the container */
+}
+
+.snip1533 {
+box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+color: #9e9e9e;
+font-family: 'Roboto', Arial, sans-serif;
+font-size: 16px;
+margin: 20px;
+max-width: 310px;
+min-width: 250px;
+position: relative;
+text-align: center;
+background-color: #ffffff;
+border-radius: 5px;
+border-top: 5px solid #16A34A;
+display: inline-block; /* Ensures elements are displayed inline */
+}
+
+.snip1533 *,
+.snip1533 *:before {
+box-sizing: border-box;
+transition: all 0.1s ease-out;
+}
+
+.snip1533 figcaption {
+padding: 13% 10% 12%;
+}
+
+.snip1533 figcaption:before {
+transform: translateX(-50%);
+background-color: #fff;
+border-radius: 50%;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+color: #0090D7;
+content: "\f10e";
+font-family: 'FontAwesome';
+font-size: 32px;
+font-style: normal;
+left: 50%;
+line-height: 60px;
+position: absolute;
+top: -30px;
+width: 60px;
+}
+
+.snip1533 h3 {
+color: #3c3c3c;
+font-size: 20px;
+font-weight: 300;
+line-height: 24px;
+margin: 10px 0 5px;
+}
+
+.snip1533 h4 {
+font-weight: 400;
+margin: 0;
+opacity: 0.5;
+}
+
+.snip1533 blockquote {
+font-style: italic;
+font-weight: 300;
+margin: 0 0 20px;
+}
+
+/* Background and body styles */
+body {
+background-color: #ffffff;
+}
+
+
+</style>
+	
 	</head>
 
 
@@ -76,100 +259,138 @@
 
 		
 
-			<section class="section_mod-c section-bg_mod-a">
+<br>
+
+			<div class="box">
 				<div class="container">
-					<div class="row">
+					 <div class="row">
 						<div class="col-xs-12">
 							<h2 class="ui-title-block"><span class="ui-title-emphasis"></span>MOVE IN WITH US TO MOVE OUT</h2>
 							<div class="decor-1"><i class="icon flaticon-airplane68"></i></div>
 							
 						</div>
-					</div>
-					<div class="row">
-						<div class="col-xs-12">
-							<ul class="list-features list-features_mod-a list-features_left list-unstyled">
-								<li class="list-features__item">
-									<i class="list-features__icon flaticon-delivery56"></i>
-									<div class="list-features__inner">
-										<h3 class="list-features__title ui-title-inner">WHO ARE WE?</h3>
-										<div class="list-features__description">We are e-Port Logistics, your steadfast partners in navigating the intricate world of logistics. In this vast ocean of trade and transport, we are the compass guiding your journey. We're not just movers of goods; we're architects of seamless connections, ensuring your cargo reaches its destination, wherever that may be.</div>
+						 
+							<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+						   
+								<div class="box-part text-center">
+									
+									<i class="fa fa-users" aria-hidden="true"></i>
+									
+									<div class="title">
+										<h4>WHO ARE WE?</h4>
 									</div>
-								</li>
-								<li class="list-features__item">
-									<i class="list-features__icon flaticon-world77"></i>
-									<div class="list-features__inner">
-										<h3 class="list-features__title ui-title-inner">MISSION</h3>
-										<div class="list-features__description">Our mission is simple but powerful: to redefine logistics. We're on a relentless pursuit to streamline the movement of goods, breaking down barriers, and making logistics effortless for you. Every day, we strive to innovate and transform the industry, enabling businesses to spread their wings and reach new heights.</div>
+									
+									<div class="text">
+										<span>We are e-Port Logistics, your steadfast partners in navigating the intricate world of logistics. In this vast ocean of trade and transport, we are the compass guiding your journey. We're not just movers of goods; we're architects of seamless connections, ensuring your cargo reaches its destination, wherever that may be.</span>
 									</div>
-								</li>
-								<li class="list-features__item">
-									<i class="list-features__icon flaticon-transport643"></i>
-									<div class="list-features__inner">
-										<h3 class="list-features__title ui-title-inner">VISION</h3>
-										<div class="list-features__description">Our vision is to be the beating heart of global trade, pulsating with efficiency and reliability. We envision a logistics landscape where every business, regardless of size, can seamlessly connect with the world. We envision a future where logistics isn't a concern, but simply picking something up, then placing it in the right place.
-										</div>
+									
+									
+									
+								 </div>
+							</div>	 
+							
+							 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+						   
+								<div class="box-part text-center">
+									
+									<i class="fa fa-anchor" aria-hidden="true"></i>
+								
+									<div class="title">
+										<h4>MISSION</h4>
 									</div>
-								</li>
-								<li class="list-features__item">
-									<i class="list-features__icon flaticon-sticker1"></i>
-									<div class="list-features__inner">
-										<h3 class="list-features__title ui-title-inner">What Our Clients Have to Say About Us
-										</h3>
-										<div class="list-features__description">At e-Port Logistics, we let our actions speak louder than words. Join us in this logistics revolution and experience seamless connections, efficient deliveries, and a future of logistics reimagined.</div>
+									
+									<div class="text">
+										<span>Our mission is simple but powerful: to redefine logistics. We're on a relentless pursuit to streamline the movement of goods, breaking down barriers, and making logistics effortless for you. Every day, we strive to innovate and transform the industry, enabling businesses to spread their wings and reach new heights.</span><br><br>
 									</div>
-								</li>
-							</ul>
-						</div>
-					</div>
-					<div class="row">
-						
-					</div>
-					<div class="row">
-						<div class="col-xs-12">
-							<ul class="list-features list-features_mod-a list-features_left list-unstyled">
-								<li class="list-features__item">
-									<i class="list-features__icon flaticon-head39"></i>
-									<div class="list-features__inner">
-										<h3 class="list-features__title ui-title-inner">Team
-										</h3>
-										<div class="list-features__description">Our team isn't just a group of professionals; we're a family bound by a passion for logistics. With dedication as our compass and efficiency as our map, we navigate the complex logistics terrain. Our approach ensures we deliver excellence with precision, every single time.
-										</div>
+									
+								
+									
+								 </div>
+							</div>	 
+							
+							 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+						   
+								<div class="box-part text-center">
+									
+									<i class="fa fa-binoculars" aria-hidden="true"></i>
+									
+									<div class="title">
+										<h4>VISION</h4>
 									</div>
-								</li>
-								<li class="list-features__item">
-									<i class="list-features__icon flaticon-print44"></i>
-									<div class="list-features__inner">
-										<h3 class="list-features__title ui-title-inner"> Core Values</h3>
-										<div class="list-features__description">Innovation:
-											Innovation fuels our progress. We embrace new ideas, technologies, and methodologies to constantly evolve and enhance our services. We encourage creativity and forward-thinking, always aiming for smarter and more effective logistics solutions.
-											</div>
+									
+									<div class="text">
+										<span>Our vision is to be the beating heart of global trade, pulsating with efficiency and reliability. We envision a logistics landscape where every business, regardless of size, can seamlessly connect with the world. We envision a future where logistics isn't a concern, but simply picking something up, then placing it in the right place.</span>
 									</div>
-								</li>
-								<li class="list-features__item">
-									<i class="list-features__icon flaticon-print44"></i>
-									<div class="list-features__inner">
-										<h3 class="list-features__title ui-title-inner"> Core Values</h3>
-										<div class="list-features__description">Endurance: 
-											The answer is always there, one just needs to keep their head strong and power through it. We are dedicated to perfection, and through rigorous training we have inculcated the endurance to achieve it.
-											
-										</div>
+									
+									
+									
+								 </div>
+							</div>	 
+							
+							<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+						   
+								<div class="box-part text-center">
+									
+									<i class="fa fa-pencil" aria-hidden="true"></i>
+									
+									<div class="title">
+										<h4>Core Values</h4>
 									</div>
-								</li>
-								<li class="list-features__item">
-									<i class="list-features__icon flaticon-print44"></i>
-									<div class="list-features__inner">
-										<h3 class="list-features__title ui-title-inner"> Core Values
-										</h3>
-										<div class="list-features__description">Ecological Sustainability: 
-											We must all take a necessary step to preserve the very world we live upon. At e-Port, we hold ecological sustainability paramount. We prioritise your shipment, but no says that ecology and profit cannot go hand-in-hand. 
-											</div>
+									
+									<div class="text">
+										<span>Innovation: Innovation fuels our progress. We embrace new ideas, technologies, and methodologies to constantly evolve and enhance our services. We encourage creativity and forward-thinking, always aiming for smarter and more effective logistics solutions.</span>
 									</div>
-								</li>
-							</ul>
-						</div>
-					</div>
+									
+									
+									
+								 </div>
+							</div>	 
+							
+							 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+						   
+								<div class="box-part text-center">
+									
+									<i class="fa fa-pencil" aria-hidden="true"></i>
+								
+									<div class="title">
+										<h4>Core Values</h4>
+									</div>
+									
+									<div class="text">
+										<span>Endurance: The answer is always there, one just needs to keep their head strong and power through it. We are dedicated to perfection, and through rigorous training we have inculcated the endurance to achieve it.
+
+										</span><br><br>
+									</div>
+									
+							
+									
+								 </div>
+							</div>	 
+							
+							 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+						   
+								<div class="box-part text-center">
+									
+									<i class="fa fa-pencil" aria-hidden="true"></i>
+									
+									<div class="title">
+										<h4>Core Values</h4>
+									</div>
+									
+									<div class="text">
+										<span>Ecological Sustainability: We must all take a necessary step to preserve the very world we live upon. At e-Port, we hold ecological sustainability paramount. We prioritise your shipment, but no says that ecology and profit cannot go hand-in-hand.</span>
+									</div>
+									
+								
+									
+								 </div>
+							</div>
+					
+					</div>		
 				</div>
-			</section>
+			</div>
+
+			
 
 
 			<div class="ram">
@@ -239,7 +460,10 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-xs-12">
-								<h2 class="ui-title-block"><span class="ui-title-emphasis">dedicated &amp; Professional</span>meet our team</h2>
+								<h2 class="ui-title-block"><span class="ui-title-emphasis"></span>meet our team</h2>
+								<div style="text-align: center;">
+									<p>Our team isn't just a group of professionals; we're a family bound by a passion for logistics. With dedication as our compass and efficiency as our map, we navigate the complex logistics terrain. Our approach ensures we deliver excellence with precision, every single time.</p>
+								</div><br>
 								<div class="decor-1"><i class="icon flaticon-airplane68"></i></div>
 							</div>
 						</div>
@@ -304,7 +528,37 @@
 					</div>
 				</div>
 			</section>
-<hr>
+
+<section class="testimonials-container">
+    <figure class="snip1533">
+      <figcaption>
+        <blockquote>
+          <p>"For a growing company like ours, efficient logistics are crucial. ePort Logistics has been a game-changer! Their bonded warehousing solutions have freed up a significant amount of working capital, allowing us to invest in further growth opportunities.  Their communication is clear and consistent, and I have complete confidence knowing our inventory is secure in their state-of-the-art facilities."</p>
+        </blockquote>
+        <h3>Venkitesh </h3>
+        <h4>(Emerald Enterprises)</h4>
+      </figcaption>
+    </figure>
+    <figure class="snip1533">
+      <figcaption>
+        <blockquote>
+          <p>"ePort Logistics goes above and beyond in this regard. Their flexible warehousing options allowed us to choose the perfect environment for our light fixtures, and their air freight services ensure they arrive at their destination safely and on time.  We highly recommend ePort Logistics for any company that values expertise and a customer-centric approach."<br><br><br></p>
+        </blockquote>
+        <h3>Azim</h3>
+        <h4>(Lumos)</h4>
+      </figcaption>
+    </figure>
+    <figure class="snip1533">
+      <figcaption>
+        <blockquote>
+          <p>"Their end-to-end services take care of everything, from origin pickup to customs clearance.  Their multilingual staff ensures seamless communication across borders, and their real-time tracking system allows us to closely monitor our shipments every step of the way. ePort Logistics is a true partner in our success."<br><br> <br><br></p>
+        </blockquote>
+        <h3>Ajay</h3>
+        <h4>(ABC Rowanda)</h4>
+      </figcaption>
+    </figure>
+  </section>
+  <hr>
 
 			<div class="marquee">
 				<h2 class="ui-title-block"><span class="ui-title-emphasis"></span>Our Affiliations</h2>
@@ -329,6 +583,75 @@
 					  
 					  <div class="marquee-item">
 						<img src="assets/media/clients/5.png" alt="">
+					  </div>
+					  <div class="marquee-item">
+						<img src="assets/media/clients/6.png" alt="">
+					  </div>
+					  
+					  <div class="marquee-item">
+						<img src="assets/media/clients/1.png" alt="">
+					  </div>
+					  
+					  <div class="marquee-item">
+						<img src="assets/media/clients/2.png" alt="">
+					  </div>
+					  
+					  <div class="marquee-item">
+						<img src="assets/media/clients/3.png" alt="">
+					  </div>
+					  
+					  <div class="marquee-item">
+						<img src="assets/media/clients/4.png" alt="">
+					  </div>
+					  <div class="marquee-item">
+						<img src="assets/media/clients/5.png" alt="">
+					  </div>
+					  
+					  <div class="marquee-item">
+						<img src="assets/media/clients/6.png" alt="">
+					  </div>
+					  
+					  <div class="marquee-item">
+						<img src="assets/media/clients/1.png" alt="">
+					  </div>
+					  
+					  <div class="marquee-item">
+						<img src="assets/media/clients/2.png" alt="">
+					  </div>
+					  
+					  <div class="marquee-item">
+						<img src="assets/media/clients/3.png" alt="">
+					  </div>
+					  <div class="marquee-item">
+						<img src="assets/media/clients/4.png" alt="">
+					  </div>
+					  
+					  <div class="marquee-item">
+						<img src="assets/media/clients/5.png" alt="">
+					  </div>
+					  
+					  <div class="marquee-item">
+						<img src="assets/media/clients/6.png" alt="">
+					  </div>
+					  
+					  <div class="marquee-item">
+						<img src="assets/media/clients/1.png" alt="">
+					  </div>
+					  
+					  <div class="marquee-item">
+						<img src="assets/media/clients/2.png" alt="">
+					  </div>
+					  <div class="marquee-item">
+						<img src="assets/media/clients/3.png" alt="">
+					  </div>
+					  <div class="marquee-item">
+						<img src="assets/media/clients/4.png" alt="">
+					  </div>
+					  <div class="marquee-item">
+						<img src="assets/media/clients/5.png" alt="">
+					  </div>
+					  <div class="marquee-item">
+						<img src="assets/media/clients/6.png" alt="">
 					  </div>
 					 
 					 
@@ -390,16 +713,17 @@
 														<div class="decor-2 decor-2_mod-b decor-2_mod_white"></div>
 														<ul class="footer-list list-unstyled">
 															<li class="footer-list__item">
-																<a class="footer-list__link" href="clearing.html">Clearing</a>
-															</li>
-															<li class="footer-list__item">
 																<a class="footer-list__link" href="forwarding.html">Forwarding</a>
 															</li>
 															<li class="footer-list__item">
-																<a class="footer-list__link" href="cargo.html">Cargo Handling Services</a>
+																<a class="footer-list__link" href="clearing.html">Clearing</a>
+															</li>
+															
+															<li class="footer-list__item">
+																<a class="footer-list__link" href="cargo.html">End to End Logistics</a>
 															</li>
 															<li class="footer-list__item">
-																<a class="footer-list__link" href="marine.html">Marine Insurance</a>
+																<a class="footer-list__link" href="marine.html">Insurance</a>
 															</li>
 															<li class="footer-list__item">
 																<a class="footer-list__link" href="warehousing.html">Warehousing Solutions</a>
@@ -439,23 +763,26 @@
 														<div class="decor-2 decor-2_mod-b decor-2_mod_white"></div>
 														<div class="footer-contact">
 															<div class="footer-contact__inner">
-																<div class="footer-contact__title">e-Port Logistics Pvt Ltd – Head Office</div>
-																<div class="footer-contact__info">Old No:282, New No: 401, MKN Road, Alandur, 
-																	Chennai 600016.</div>
+																<div class="footer-contact__title">
+																	M/s. E-PORT LOGISTICS PVT. LTD
+																	
+																	</div>
+																<div class="footer-contact__info">4/164, F8/9, K.T.C. NAGAR,
+																	STATE BANK COLONY (NORTH), TUTICORIN – 628002</div>
 																<div class="footer-contact__info">Phone: 91 44 2233 1825</div>
-																<div class="footer-contact__info">Email: <a href="mailto:inquiry@domain.com">maagen@eport.in</a></div>
+																<div class="footer-contact__info">Email: <a href="mailto:inquiry@domain.com">sales@eport.in</a></div>
 																<select id="addressSelect" class="form-control">
 																	<option >Search Branches</option>
-																	<option value="1">Chennai</option>
-																	<option value="2">Coimbatore</option>
-																	<option value="3">Tirupur</option>
-																	<option value="4">Karur</option>
-																	<option value="5">Thoothukudi</option>
-																	<option value="6">Bangalore</option>
-																	<option value="7">Cohin</option>
-																	<option value="8">Mumbai</option>
-																	<option value="9">Mundra</option>
-																	<option value="10">Delhi</option>
+																	
+																	<option value="1">Coimbatore</option>
+																	<option value="2">Tirupur</option>
+																	<option value="3">Karur</option>
+																	<option value="4">Thoothukudi</option>
+																	<option value="5">Bangalore</option>
+																	<option value="6">Cohin</option>
+																	<option value="7">Mumbai</option>
+																	<option value="8">Mundra</option>
+																	<option value="9">Delhi</option>
 																  </select>
 																  
 																  <div class="modal fade" id="addressModal" tabindex="-1" role="dialog" aria-labelledby="addressModalLabel" aria-hidden="true">
@@ -487,7 +814,7 @@
 
 
 									<div class="copyright clearfix">
-										<div class="copyright__inner">© 2007-2024 <strong>e-Port Logistics Pvt. Ltd.</strong> All rights reserved | Designed and Developed by <a class="copyright__link" href="www.teamfullstack.in">Team FullStack</a></div>
+										<div class="copyright__inner">© 2007-2024 <strong>e-Port Logistics Pvt. Ltd.</strong> All rights reserved </div>
 										<ul class="copyright-list list-inline">
 											<li class="copyright-list__item">
 												<a class="copyright-list__link" href="termsofuse.html">Terms of Use</a>
@@ -516,6 +843,7 @@
 		<script src="../../../xeewkVNaZQnN.com/ajax/libs/jquery-easing/GJhqBht1mlaa.3/OWJ3kkb2xCCi.js"></script>
 		<script src="assets/js/modernizr.custom.js"></script>
 		<script src="assets/js/cssua.min.js"></script>
+		
 
 		<script>
 			function toggleMenu() {
@@ -530,74 +858,50 @@
 			$(document).ready(function(){
 			  // Define address details
 			  var addresses = [
-				{
-				  address: "Old No:282, New No: 401, MKN Road, Alandur, Chennai 600016.",
-				  tel: " 91 44 2233 1825",
-				  fax: "+ 91 44 2256 1822",
-				  email: "suresh@eport.in",
-				  contactPerson: "Mr. Suresh",
-				  mobile: "+ 91 97909 75931"
-				},
+				
 				{
 				  address: "No: 6 – First Floor, Gurusamy Nagar, Thaneerpanthal, Coimbatore",
-				  tel: "00 91 422 2975203",
-				  email: "bdm@eport.in",
-				  contactPerson: "Mr. Vaidyalingam",
+				 
 				  mobile: "+ 91 90030 19699"
 				},
 				{
 				  address: "22/88, 3RD Floor, Mahalakshmi Apartment, Near Sowthambika Kalyana Mandapam, College Road, Tirupur – 641 602",
-				  tel: "+ 91 421 2231360",
-				  fax: "+ 91 421 4240340",
-				  email: "rajesh@eport.in",
-				  contactPerson: "Mr. Rajesh",
+				
 				  mobile: "+ 91 90030 45204"
 				},
 				{
 				  address: "26/9C, Kamarajar Nagar, 3rd Main, Tuticorin – 8",
-				  phone: "+ 91 461 2310921",
-				  fax: "+ 91 461 2310921",
-				  email: "kk@eport.in",
-				  contactPerson: "Mr. Krishna Kumar",
+				  
 				  mobile: "+ 91 90030 45208"
 				},
 				{
         address: "26/9C, Kamarajar Nagar, 3rd Main, Tuticorin – 8",
-        phone: "00 91 461 2310921",
-        fax: "00 91 461 2310921",
-        email: "kk@eport.in",
-        contactPerson: "Mr. Krishna Kumar",
+        
         mobile: "00 91 90030 45208"
       },
       {
         address: "42/1, Ground Floor, Saraswathi Puram, Jogupalayam.Halsuru, Bangalore-560008",
-        email: "sales1@eport.in; subramaniam@eport.in",
-        contactPerson: "Mr. Murali Raman; Mr. Subramaniam",
+       
         mobile: "00 91 78299 63644 / 00 91 95940 02354"
       },
       {
-        address: "39/6615, First Floor,Pallath Business Centre, Kurishupally Road,Ravipuram, Cochin- 682015",
-        contactPerson: "S.Iyer",
+        address: "61/2106, Second Floor, Chiramel building, Kurisupally Road, Ravi Puram, Cochin - 682 015.",
+       
         mobile: "00 91 81390 40210"
       },
       {
         address: "No.30, Sai Chambers 1st floor, Sector 11, CBD Belapur, Navi Mumbai – 400614",
-        tel: "00 91 22 27579991",
-        email: "subramaniam@eport.in",
-        contactPerson: "Mr. Subramaniam",
+       
         mobile: "00 91 95940 02354"
       },
       {
         address: "No.112, First Floor, K-Sons Complex, Plot No: 108, Sector 8, Behind Olso Cinema, Gandhidham, Gujarat – 370 201",
-        tel: "00 91 2836 226666",
-        email: "subramaniam@eport.in",
-        contactPerson: "Mr. Subramaniam",
+      
         mobile: "00 91 95940 02354"
       },
       {
         address: "C/O Seastar Global Logistics Pvt Ltd, 14/6, LGF, Opp. Desh Bandhu College, Kalkaji, New Delhi – 110 019",
-        email: "subramaniam@eport.in",
-        contactPerson: "Mr. Subramaniam",
+     
         mobile: "00 91 95940 02354"
       }
 
@@ -607,10 +911,7 @@
 			  function populateModal(index) {
 				var address = addresses[index];
 				var modalBody = "<p><strong>Address:</strong> " + address.address + "</p>";
-				modalBody += "<p><strong>Tel:</strong> " + (address.tel ? address.tel : "") + "</p>";
-				modalBody += "<p><strong>Fax:</strong> " + (address.fax ? address.fax : "") + "</p>";
-				modalBody += "<p><strong>Email:</strong> " + address.email + "</p>";
-				modalBody += "<p><strong>Contact Person:</strong> " + address.contactPerson + "</p>";
+			
 				modalBody += "<p><strong>Mobile:</strong> " + address.mobile + "</p>";
 				$("#addressDetails").html(modalBody);
 			  }

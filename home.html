@@ -51,6 +51,132 @@
             margin-bottom: 15px;
         }
     </style>
+
+<style>
+	.marquee {
+overflow: hidden;
+white-space: nowrap;
+width: 100%;
+position: relative;
+}
+
+.marquee-content {
+display: inline-block;
+animation: marquee 20s linear infinite;
+}
+
+.marquee-item {
+display: inline-block;
+margin-right: 40px; /* Increased spacing between items */
+}
+
+/* Increase the size of the marquee items */
+.marquee-item img {
+max-height: 150px; /* Adjust the height of the images as needed */
+max-width: auto; /* Allow the width to adjust proportionally */
+}
+
+@keyframes marquee {
+0% {
+transform: translateX(100%);
+}
+100% {
+transform: translateX(-100%);
+}
+}
+
+/* Style for the title */
+.ui-title-block {
+text-align: center;
+margin-bottom: 20px;
+}
+
+
+</style>
+
+<style>
+	@import url(https://fonts.googleapis.com/css?family=Roboto:300,400);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+
+/* Styles for the Testimonial section */
+.testimonials-container {
+margin: 0 auto; /* Horizontally centers the container */
+max-width: 1200px;
+padding: 20px;
+text-align: center; /* Centers the contents inside the container */
+}
+
+.snip1533 {
+box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+color: #9e9e9e;
+font-family: 'Roboto', Arial, sans-serif;
+font-size: 16px;
+margin: 20px;
+max-width: 310px;
+min-width: 250px;
+position: relative;
+text-align: center;
+background-color: #ffffff;
+border-radius: 5px;
+border-top: 5px solid #16A34A;
+display: inline-block; /* Ensures elements are displayed inline */
+}
+
+.snip1533 *,
+.snip1533 *:before {
+box-sizing: border-box;
+transition: all 0.1s ease-out;
+}
+
+.snip1533 figcaption {
+padding: 13% 10% 12%;
+}
+
+.snip1533 figcaption:before {
+transform: translateX(-50%);
+background-color: #fff;
+border-radius: 50%;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+color: #0090D7;
+content: "\f10e";
+font-family: 'FontAwesome';
+font-size: 32px;
+font-style: normal;
+left: 50%;
+line-height: 60px;
+position: absolute;
+top: -30px;
+width: 60px;
+}
+
+.snip1533 h3 {
+color: #3c3c3c;
+font-size: 20px;
+font-weight: 300;
+line-height: 24px;
+margin: 10px 0 5px;
+}
+
+.snip1533 h4 {
+font-weight: 400;
+margin: 0;
+opacity: 0.5;
+}
+
+.snip1533 blockquote {
+font-style: italic;
+font-weight: 300;
+margin: 0 0 20px;
+}
+
+/* Background and body styles */
+body {
+background-color: #ffffff;
+}
+
+
+</style>
+
 	
 
 
@@ -267,20 +393,6 @@
 					<ul class="slides">
 						<li class="slider-thumbnails-main__item">
 							<div class="slider-thumbnails-main__img">
-								<img class="img-responsive" src="https://images.unsplash.com/photo-1485575301924-6891ef935dcd?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Foto">
-							</div>
-							<div class="slider-thumbnails-main__info">
-								<i class="slider-thumbsnails-main__icon flaticon-envelope53"></i>
-								<div class="decor-2 decor-2_mod_white"></div>
-								<div class="slider-thumbsnails-main__text">
-									<p>Effortless Logistics Transition</p>
-									<p>Trust our clearing and forwarding service to simplify customs and regulations, ensuring seamless transitions for your goods, and clear the path for your business success.</p>
-									<a href="clearing.html" class="read-more">Read More</a>
-								</div>
-							</div>
-						</li>
-						<li class="slider-thumbnails-main__item">
-							<div class="slider-thumbnails-main__img">
 								<img class="img-responsive" src="https://images.unsplash.com/photo-1524592714635-d77511a4834d?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Foto">
 							</div>
 							<div class="slider-thumbnails-main__info">
@@ -288,12 +400,27 @@
 								<div class="decor-2 decor-2_mod_white"></div>
 								<div class="slider-thumbsnails-main__text">
 									<p>Your Logistics Compass</p>
-									<p>Our logistics solutions offer the strategic direction your business requires in this dynamic landscape. Rely on us from planning to execution to efficiently and reliably guide your cargo to its destination.
+									<p>Let us handle the complexities of forwarding. Our strategic forwarding as a service simplifies your supply chain, guiding your shipments from origin to final destination.
 										</p>
 										<a href="forwarding.html" class="read-more">Read More</a>
 								</div>
 							</div>
 						</li>
+						<li class="slider-thumbnails-main__item">
+							<div class="slider-thumbnails-main__img">
+								<img class="img-responsive" src="https://images.unsplash.com/photo-1485575301924-6891ef935dcd?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Foto">
+							</div>
+							<div class="slider-thumbnails-main__info">
+								<i class="slider-thumbsnails-main__icon flaticon-envelope53"></i>
+								<div class="decor-2 decor-2_mod_white"></div>
+								<div class="slider-thumbsnails-main__text">
+									<p>Effortless Logistics Transition</p>
+									<p>Trust our clearing service to simplify customs and regulations, ensuring seamless transitions for your goods, and clear the path for your business success.</p>
+									<a href="clearing.html" class="read-more">Read More</a>
+								</div>
+							</div>
+						</li>
+						
 						<li class="slider-thumbnails-main__item">
 							<div class="slider-thumbnails-main__img">
 								<img class="img-responsive" src="https://images.unsplash.com/photo-1494412519320-aa613dfb7738?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Foto">
@@ -303,7 +430,7 @@
 								<div class="decor-2 decor-2_mod_white"></div>
 								<div class="slider-thumbsnails-main__text">
 									<p>Handled with Care, Delivered with Precision</p>
-									<p>We view your cargo as a promise, not just goods. With our cargo handling services, each item receives meticulous care and attention. Our commitment to precision at every stage guarantees that your cargo arrives at its destination intact and on time.
+									<p>Experience transportation elevated. Our end-to-end logistics manage every step, from seamless pickup to precise delivery.
 										</p>
 										<a href="cargo.html" class="read-more">Read More</a>
 									</div>
@@ -318,7 +445,7 @@
 								<div class="decor-2 decor-2_mod_white"></div>
 								<div class="slider-thumbsnails-main__text">
 									<p>Safeguarding Your Maritime Journey</p>
-									<p>In the unpredictable sea, you need a reliable safety net. Our marine insurance service offers just that. Rest assured, your cargo is protected, and your maritime journey is secured against unforeseen challenges, providing you with peace of mind.</p>
+									<p>Cargo safe, finances secure. Marine insurance + ECGC cover both accidents & buyer defaults.</p>
 									<a href="marine.html" class="read-more">Read More</a>
 								</div>
 							</div>
@@ -344,19 +471,20 @@
 				<div id="carousel-product" class="flexslider slider-thumbnails-nav">
 					<ul class="slides">
 						<li class="slider-thumbnails-nav__item">
-							<div class="slider-thumbnails-nav__text"><span class="decor-3 decor-3_mod-a"></span>Clearing</div>
-							<span class="helper-2"></span>
-						</li>
-						<li class="slider-thumbnails-nav__item">
 							<div class="slider-thumbnails-nav__text"><span class="decor-3 decor-3_mod-a"></span>Forwarding</div>
 							<span class="helper-2"></span>
 						</li>
 						<li class="slider-thumbnails-nav__item">
-							<div class="slider-thumbnails-nav__text"><span class="decor-3 decor-3_mod-a"></span>Cargo Handling Services</div>
+							<div class="slider-thumbnails-nav__text"><span class="decor-3 decor-3_mod-a"></span>Clearing</div>
+							<span class="helper-2"></span>
+						</li>
+						
+						<li class="slider-thumbnails-nav__item">
+							<div class="slider-thumbnails-nav__text"><span class="decor-3 decor-3_mod-a"></span>End to End Logistics</div>
 							<span class="helper-2"></span>
 						</li>
 						<li class="slider-thumbnails-nav__item">
-							<div class="slider-thumbnails-nav__text"><span class="decor-3 decor-3_mod-a"></span>Marine Insurance</div>
+							<div class="slider-thumbnails-nav__text"><span class="decor-3 decor-3_mod-a"></span>Insurance</div>
 							<span class="helper-2"></span>
 						</li>
 						
@@ -375,9 +503,11 @@
 						<div class="col-xs-12">
 							<h2 class="ui-title-block"><span class="ui-title-emphasis">why choose us</h2>
 							<div class="decor-1"><i class="icon flaticon-airplane68"></i></div>
-							<div class="ui-subtitle-block ui-subtitle-block_mod-a">We're not just transporting goods; we're architecting a logistics voyage that fast-tracks your
-								success.
-								</div>
+							<div class="ui-subtitle-block ui-subtitle-block_mod-a">Handled with Care, Delivered with Precision
+								</div><div style="text-align: center;">
+    <p>We view your cargo as a promise, not just goods. With our cargo handling services, each item receives meticulous care and attention. Our commitment to precision at every stage guarantees that your cargo arrives at its destination intact and on time.</p>
+</div><br>
+
 						</div>
 					</div>
 					<div class="row">
@@ -435,54 +565,44 @@
 
 						
 
-							</section>
-						</div>
-					</div>
-				</div>
-			</div><!-- end section -->
+						
 
 
-			<!--<div class="section-default parallax-bg parallax-dark wow">
-				<ul class="bg-slideshow">
-					<li>
-						<div style="background-image:url(https://images.unsplash.com/photo-1635859890085-ec8cb5466806?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)" class="bg-slide"></div>
-					</li>
-				</ul>
-				<div class="container">
-					<div class="row">
-						<div class="col-xs-12">
-							<section class="section-reviews section__inner">
-								<h2 class="ui-title-block ui-title-block_mod_color reviews-list__title">they trust us</h2>
-								<div class="decor-2 decor-2_mod-b decor-2_mod_white"></div>
-								<div class="owl-carousel owl-theme owl-theme_mod-a enable-owl-carousel" data-pagination="true" data-navigation="false" data-single-item="true" data-auto-play="700000" data-transition-style="fade" data-main-text-animation="true" data-after-init-delay="3000" data-after-move-delay="1000" data-stop-on-hover="true">
-									<div class="reviews-list">
-										<div class="reviews-list__img"><img class="img-responsive" src="assets/media/reviews/member-1.jpg" alt="foto"></div>
-										<div class="reviews-list__inner">
-											<blockquote class="reviews-list__blockquote">
-												<header>
-													<cite>
-														<span class="reviews-list__autor">john matt</span>
-														<span class="reviews-list__company">CEO Trans globOl LTD.</span>
-													</cite>
-												</header>
-												<p>“ Lorem ipsum dolor sit amet consectetur adipisicing elit sed eiusmod tempor  incididunt ut labore etu dolore magna aliqua enim veniam quis nostrud exercitate ullamco laboris nisi aliquip exea commodo consequat duis aute dolor reprehenderit in lorem ipsum dolor sit ametas consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</p>
-											</blockquote>
-										</div>
-									</div>!-- end slider 
-
-									
-								</div>
-							</section>
-						</div>
-					</div>
-				</div>
-			</div>--><!-- end section -->
+			<section class="testimonials-container">
+				<figure class="snip1533">
+				  <figcaption>
+					<blockquote>
+					  <p>"For a growing company like ours, efficient logistics are crucial. ePort Logistics has been a game-changer! Their bonded warehousing solutions have freed up a significant amount of working capital, allowing us to invest in further growth opportunities.  Their communication is clear and consistent, and I have complete confidence knowing our inventory is secure in their state-of-the-art facilities."</p>
+					</blockquote>
+					<h3>Venkitesh </h3>
+					<h4>(Emerald Enterprises)</h4>
+				  </figcaption>
+				</figure>
+				<figure class="snip1533">
+				  <figcaption>
+					<blockquote>
+					  <p>"ePort Logistics goes above and beyond in this regard. Their flexible warehousing options allowed us to choose the perfect environment for our light fixtures, and their air freight services ensure they arrive at their destination safely and on time.  We highly recommend ePort Logistics for any company that values expertise and a customer-centric approach."<br><br><br></p>
+					</blockquote>
+					<h3>Azim</h3>
+					<h4>(Lumos)</h4>
+				  </figcaption>
+				</figure>
+				<figure class="snip1533">
+				  <figcaption>
+					<blockquote>
+					  <p>"Their end-to-end services take care of everything, from origin pickup to customs clearance.  Their multilingual staff ensures seamless communication across borders, and their real-time tracking system allows us to closely monitor our shipments every step of the way. ePort Logistics is a true partner in our success."<br><br> <br><br></p>
+					</blockquote>
+					<h3>Ajay</h3>
+					<h4>(ABC Rowanda)</h4>
+				  </figcaption>
+				</figure>
+			  </section>
 
 
 			<!-- end section -->
 
+			
 			<div class="marquee">
-				<br>
 				<h2 class="ui-title-block"><span class="ui-title-emphasis"></span>Our Affiliations</h2>
 				<br>
 				<div class="marquee-content"> 
@@ -506,16 +626,78 @@
 					  <div class="marquee-item">
 						<img src="assets/media/clients/5.png" alt="">
 					  </div>
+					  <div class="marquee-item">
+						<img src="assets/media/clients/6.png" alt="">
+					  </div>
 					  
+					  <div class="marquee-item">
+						<img src="assets/media/clients/1.png" alt="">
+					  </div>
+					  
+					  <div class="marquee-item">
+						<img src="assets/media/clients/2.png" alt="">
+					  </div>
+					  
+					  <div class="marquee-item">
+						<img src="assets/media/clients/3.png" alt="">
+					  </div>
+					  
+					  <div class="marquee-item">
+						<img src="assets/media/clients/4.png" alt="">
+					  </div>
+					  <div class="marquee-item">
+						<img src="assets/media/clients/5.png" alt="">
+					  </div>
+					  
+					  <div class="marquee-item">
+						<img src="assets/media/clients/6.png" alt="">
+					  </div>
+					  
+					  <div class="marquee-item">
+						<img src="assets/media/clients/1.png" alt="">
+					  </div>
+					  
+					  <div class="marquee-item">
+						<img src="assets/media/clients/2.png" alt="">
+					  </div>
+					  
+					  <div class="marquee-item">
+						<img src="assets/media/clients/3.png" alt="">
+					  </div>
+					  <div class="marquee-item">
+						<img src="assets/media/clients/4.png" alt="">
+					  </div>
+					  
+					  <div class="marquee-item">
+						<img src="assets/media/clients/5.png" alt="">
+					  </div>
+					  
+					  <div class="marquee-item">
+						<img src="assets/media/clients/6.png" alt="">
+					  </div>
+					  
+					  <div class="marquee-item">
+						<img src="assets/media/clients/1.png" alt="">
+					  </div>
+					  
+					  <div class="marquee-item">
+						<img src="assets/media/clients/2.png" alt="">
+					  </div>
+					  <div class="marquee-item">
+						<img src="assets/media/clients/3.png" alt="">
+					  </div>
+					  <div class="marquee-item">
+						<img src="assets/media/clients/4.png" alt="">
+					  </div>
+					  <div class="marquee-item">
+						<img src="assets/media/clients/5.png" alt="">
+					  </div>
+					  <div class="marquee-item">
+						<img src="assets/media/clients/6.png" alt="">
+					  </div>
 					 
 					 
-					  
-				  
-				  
-				  
-				  
-				  
-				
+					 
 				  
 				</div>
 			  </div>
@@ -575,16 +757,17 @@
 														<div class="decor-2 decor-2_mod-b decor-2_mod_white"></div>
 														<ul class="footer-list list-unstyled">
 															<li class="footer-list__item">
-																<a class="footer-list__link" href="clearing.html">Clearing</a>
-															</li>
-															<li class="footer-list__item">
 																<a class="footer-list__link" href="forwarding.html">Forwarding</a>
 															</li>
 															<li class="footer-list__item">
-																<a class="footer-list__link" href="cargo.html">Cargo Handling Services</a>
+																<a class="footer-list__link" href="clearing.html">Clearing</a>
+															</li>
+															
+															<li class="footer-list__item">
+																<a class="footer-list__link" href="cargo.html">End to End Logistics</a>
 															</li>
 															<li class="footer-list__item">
-																<a class="footer-list__link" href="marine.html">Marine Insurance</a>
+																<a class="footer-list__link" href="marine.html">Insurance</a>
 															</li>
 															<li class="footer-list__item">
 																<a class="footer-list__link" href="warehousing.html">Warehousing Solutions</a>
@@ -624,23 +807,26 @@
 														<div class="decor-2 decor-2_mod-b decor-2_mod_white"></div>
 														<div class="footer-contact">
 															<div class="footer-contact__inner">
-																<div class="footer-contact__title">e-Port Logistics Pvt Ltd – Head Office</div>
-																<div class="footer-contact__info">Old No:282, New No: 401, MKN Road, Alandur, 
-																	Chennai 600016.</div>
+																<div class="footer-contact__title">
+																	M/s. E-PORT LOGISTICS PVT. LTD
+																	
+																	</div>
+																<div class="footer-contact__info">4/164, F8/9, K.T.C. NAGAR,
+																	STATE BANK COLONY (NORTH), TUTICORIN – 628002</div>
 																<div class="footer-contact__info">Phone: 91 44 2233 1825</div>
-																<div class="footer-contact__info">Email: <a href="mailto:inquiry@domain.com">maagen@eport.in</a></div>
+																<div class="footer-contact__info">Email: <a href="mailto:inquiry@domain.com">sales@eport.in</a></div>
 																<select id="addressSelect" class="form-control">
 																	<option >Search Branches</option>
-																	<option value="1">Chennai</option>
-																	<option value="2">Coimbatore</option>
-																	<option value="3">Tirupur</option>
-																	<option value="4">Karur</option>
-																	<option value="5">Thoothukudi</option>
-																	<option value="6">Bangalore</option>
-																	<option value="7">Cohin</option>
-																	<option value="8">Mumbai</option>
-																	<option value="9">Mundra</option>
-																	<option value="10">Delhi</option>
+																	
+																	<option value="1">Coimbatore</option>
+																	<option value="2">Tirupur</option>
+																	<option value="3">Karur</option>
+																	<option value="4">Thoothukudi</option>
+																	<option value="5">Bangalore</option>
+																	<option value="6">Cohin</option>
+																	<option value="7">Mumbai</option>
+																	<option value="8">Mundra</option>
+																	<option value="9">Delhi</option>
 																  </select>
 																  
 																  <div class="modal fade" id="addressModal" tabindex="-1" role="dialog" aria-labelledby="addressModalLabel" aria-hidden="true">
@@ -672,7 +858,7 @@
 
 
 									<div class="copyright clearfix">
-										<div class="copyright__inner">© 2007-2024 <strong>e-Port Logistics Pvt. Ltd.</strong> All rights reserved | Designed and Developed by <a class="copyright__link" href="www.teamfullstack.in">Team FullStack</a></div>
+										<div class="copyright__inner">© 2007-2024 <strong>e-Port Logistics Pvt. Ltd.</strong> All rights reserved </div>
 										<ul class="copyright-list list-inline">
 											<li class="copyright-list__item">
 												<a class="copyright-list__link" href="termsofuse.html">Terms of Use</a>
@@ -716,74 +902,50 @@
 			$(document).ready(function(){
 			  // Define address details
 			  var addresses = [
-				{
-				  address: "Old No:282, New No: 401, MKN Road, Alandur, Chennai 600016.",
-				  tel: " 91 44 2233 1825",
-				  fax: "+ 91 44 2256 1822",
-				  email: "suresh@eport.in",
-				  contactPerson: "Mr. Suresh",
-				  mobile: "+ 91 97909 75931"
-				},
+				
 				{
 				  address: "No: 6 – First Floor, Gurusamy Nagar, Thaneerpanthal, Coimbatore",
-				  tel: "00 91 422 2975203",
-				  email: "bdm@eport.in",
-				  contactPerson: "Mr. Vaidyalingam",
+				 
 				  mobile: "+ 91 90030 19699"
 				},
 				{
 				  address: "22/88, 3RD Floor, Mahalakshmi Apartment, Near Sowthambika Kalyana Mandapam, College Road, Tirupur – 641 602",
-				  tel: "+ 91 421 2231360",
-				  fax: "+ 91 421 4240340",
-				  email: "rajesh@eport.in",
-				  contactPerson: "Mr. Rajesh",
+				
 				  mobile: "+ 91 90030 45204"
 				},
 				{
 				  address: "26/9C, Kamarajar Nagar, 3rd Main, Tuticorin – 8",
-				  phone: "+ 91 461 2310921",
-				  fax: "+ 91 461 2310921",
-				  email: "kk@eport.in",
-				  contactPerson: "Mr. Krishna Kumar",
+				  
 				  mobile: "+ 91 90030 45208"
 				},
 				{
         address: "26/9C, Kamarajar Nagar, 3rd Main, Tuticorin – 8",
-        phone: "00 91 461 2310921",
-        fax: "00 91 461 2310921",
-        email: "kk@eport.in",
-        contactPerson: "Mr. Krishna Kumar",
+        
         mobile: "00 91 90030 45208"
       },
       {
         address: "42/1, Ground Floor, Saraswathi Puram, Jogupalayam.Halsuru, Bangalore-560008",
-        email: "sales1@eport.in; subramaniam@eport.in",
-        contactPerson: "Mr. Murali Raman; Mr. Subramaniam",
+       
         mobile: "00 91 78299 63644 / 00 91 95940 02354"
       },
       {
-        address: "39/6615, First Floor,Pallath Business Centre, Kurishupally Road,Ravipuram, Cochin- 682015",
-        contactPerson: "S.Iyer",
+        address: "61/2106, Second Floor, Chiramel building, Kurisupally Road, Ravi Puram, Cochin - 682 015.",
+       
         mobile: "00 91 81390 40210"
       },
       {
         address: "No.30, Sai Chambers 1st floor, Sector 11, CBD Belapur, Navi Mumbai – 400614",
-        tel: "00 91 22 27579991",
-        email: "subramaniam@eport.in",
-        contactPerson: "Mr. Subramaniam",
+       
         mobile: "00 91 95940 02354"
       },
       {
         address: "No.112, First Floor, K-Sons Complex, Plot No: 108, Sector 8, Behind Olso Cinema, Gandhidham, Gujarat – 370 201",
-        tel: "00 91 2836 226666",
-        email: "subramaniam@eport.in",
-        contactPerson: "Mr. Subramaniam",
+      
         mobile: "00 91 95940 02354"
       },
       {
         address: "C/O Seastar Global Logistics Pvt Ltd, 14/6, LGF, Opp. Desh Bandhu College, Kalkaji, New Delhi – 110 019",
-        email: "subramaniam@eport.in",
-        contactPerson: "Mr. Subramaniam",
+     
         mobile: "00 91 95940 02354"
       }
 
@@ -793,10 +955,7 @@
 			  function populateModal(index) {
 				var address = addresses[index];
 				var modalBody = "<p><strong>Address:</strong> " + address.address + "</p>";
-				modalBody += "<p><strong>Tel:</strong> " + (address.tel ? address.tel : "") + "</p>";
-				modalBody += "<p><strong>Fax:</strong> " + (address.fax ? address.fax : "") + "</p>";
-				modalBody += "<p><strong>Email:</strong> " + address.email + "</p>";
-				modalBody += "<p><strong>Contact Person:</strong> " + address.contactPerson + "</p>";
+			
 				modalBody += "<p><strong>Mobile:</strong> " + address.mobile + "</p>";
 				$("#addressDetails").html(modalBody);
 			  }
