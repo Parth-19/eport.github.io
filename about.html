@@ -43,44 +43,46 @@
 
 		<style>
 			.marquee {
-    overflow: hidden;
-    white-space: nowrap;
-    width: 100%;
-    position: relative;
-}
-
-.marquee-content {
-    display: inline-block;
-    animation: marquee 20s linear infinite;
-}
-
-.marquee-item {
-    display: inline-block;
-    margin-right: 40px; /* Increased spacing between items */
-}
-
-/* Increase the size of the marquee items */
-.marquee-item img {
-    max-height: 150px; /* Adjust the height of the images as needed */
-    max-width: auto; /* Allow the width to adjust proportionally */
-}
-
-@keyframes marquee {
-    0% {
-        transform: translateX(100%);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
-}
-
-/* Style for the title */
-.ui-title-block {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-
+				overflow: hidden;
+				white-space: nowrap;
+				width: 100%;
+				position: relative;
+			}
+	
+			.marquee-content {
+				display: inline-block;
+				animation: marquee 20s linear infinite;
+			}
+	
+			.marquee-item {
+				display: inline-block;
+				margin-right: 40px;
+				/* Increased spacing between items */
+			}
+	
+			/* Increase the size of the marquee items */
+			.marquee-item img {
+				max-height: 150px;
+				/* Adjust the height of the images as needed */
+				max-width: 150px;
+				/* Allow the width to adjust proportionally */
+			}
+	
+			@keyframes marquee {
+				0% {
+					transform: translateX(100%);
+				}
+	
+				100% {
+					transform: translateX(-100%);
+				}
+			}
+	
+			/* Style for the title */
+			.ui-title-block {
+				text-align: center;
+				margin-bottom: 20px;
+			}
 		</style>
 
 <style>
