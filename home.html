@@ -1,240 +1,254 @@
 <!DOCTYPE html>
-<html lang="en"><head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>ePort Logistics | Home</title>
-		
-		<link href="assets/img/Favicon.png" type="image/x-icon" rel="shortcut icon">
-		<link href="assets/css/master.css" rel="stylesheet">
-		
-		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
-		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
-		
-		<script src="assets/plugins/jquery/jquery-1.11.3.min.js"></script>
-		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-		<script src="assets/js/modernizr.custom.js"></script>
-		
-		<style>
-        body {
-            font-family: 'Ubuntu', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #ffffff;
-        }
+<html lang="en">
 
-        .slider-container {
-            width: 80%;
-            margin: auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 5px;
-            margin-top: 50px;
-        }
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ePort Logistics | Home</title>
 
-        .client-slider {
-            position: relative;
-            overflow: hidden;
-        }
+	<link href="assets/img/Favicon.png" type="image/x-icon" rel="shortcut icon">
+	<link href="assets/css/master.css" rel="stylesheet">
 
-        .client-slider img {
-            width: auto;
-            height: 100px; /* Set the fixed height for all images */
-            border-radius: 5px;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-        }
+	<link rel="stylesheet" type="text/css"
+		href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+	<link rel="stylesheet" type="text/css"
+		href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
 
-        .slider-title {
-            text-align: center;
-            font-size: 20px;
-            margin-bottom: 15px;
-        }
-    </style>
+	<script src="assets/plugins/jquery/jquery-1.11.3.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="assets/js/modernizr.custom.js"></script>
 
-<style>
-	.marquee {
-overflow: hidden;
-white-space: nowrap;
-width: 100%;
-position: relative;
-}
+	<style>
+		body {
+			font-family: 'Ubuntu', sans-serif;
+			margin: 0;
+			padding: 0;
+			background-color: #ffffff;
+		}
 
-.marquee-content {
-display: inline-block;
-animation: marquee 20s linear infinite;
-}
+		.slider-container {
+			width: 80%;
+			margin: auto;
+			padding: 20px;
+			background-color: #fff;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			border-radius: 5px;
+			margin-top: 50px;
+		}
 
-.marquee-item {
-display: inline-block;
-margin-right: 40px; /* Increased spacing between items */
-}
+		.client-slider {
+			position: relative;
+			overflow: hidden;
+		}
 
-/* Increase the size of the marquee items */
-.marquee-item img {
-max-height: 150px; /* Adjust the height of the images as needed */
-max-width: auto; /* Allow the width to adjust proportionally */
-}
+		.client-slider img {
+			width: auto;
+			height: 100px;
+			/* Set the fixed height for all images */
+			border-radius: 5px;
+			box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+		}
 
-@keyframes marquee {
-0% {
-transform: translateX(100%);
-}
-100% {
-transform: translateX(-100%);
-}
-}
+		.slider-title {
+			text-align: center;
+			font-size: 20px;
+			margin-bottom: 15px;
+		}
+	</style>
 
-/* Style for the title */
-.ui-title-block {
-text-align: center;
-margin-bottom: 20px;
-}
+	<style>
+		.marquee {
+			overflow: hidden;
+			white-space: nowrap;
+			width: 100%;
+			position: relative;
+		}
+
+		.marquee-content {
+			display: inline-block;
+			animation: marquee 20s linear infinite;
+		}
+
+		.marquee-item {
+			display: inline-block;
+			margin-right: 40px;
+			/* Increased spacing between items */
+		}
+
+		/* Increase the size of the marquee items */
+		.marquee-item img {
+			max-height: 150px;
+			/* Adjust the height of the images as needed */
+			max-width: auto;
+			/* Allow the width to adjust proportionally */
+		}
+
+		@keyframes marquee {
+			0% {
+				transform: translateX(100%);
+			}
+
+			100% {
+				transform: translateX(-100%);
+			}
+		}
+
+		/* Style for the title */
+		.ui-title-block {
+			text-align: center;
+			margin-bottom: 20px;
+		}
+	</style>
+
+	<style>
+		@import url(https://fonts.googleapis.com/css?family=Roboto:300,400);
+		@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+
+		/* Styles for the Testimonial section */
+		.testimonials-container {
+			margin: 0 auto;
+			/* Horizontally centers the container */
+			max-width: 1200px;
+			padding: 20px;
+			text-align: center;
+			/* Centers the contents inside the container */
+		}
+
+		.snip1533 {
+			box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+			color: #9e9e9e;
+			font-family: 'Roboto', Arial, sans-serif;
+			font-size: 16px;
+			margin: 20px;
+			max-width: 310px;
+			min-width: 250px;
+			position: relative;
+			text-align: center;
+			background-color: #ffffff;
+			border-radius: 5px;
+			border-top: 5px solid #16A34A;
+			display: inline-block;
+			/* Ensures elements are displayed inline */
+		}
+
+		.snip1533 *,
+		.snip1533 *:before {
+			box-sizing: border-box;
+			transition: all 0.1s ease-out;
+		}
+
+		.snip1533 figcaption {
+			padding: 13% 10% 12%;
+		}
+
+		.snip1533 figcaption:before {
+			transform: translateX(-50%);
+			background-color: #fff;
+			border-radius: 50%;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+			color: #0090D7;
+			content: "\f10e";
+			font-family: 'FontAwesome';
+			font-size: 32px;
+			font-style: normal;
+			left: 50%;
+			line-height: 60px;
+			position: absolute;
+			top: -30px;
+			width: 60px;
+		}
+
+		.snip1533 h3 {
+			color: #3c3c3c;
+			font-size: 20px;
+			font-weight: 300;
+			line-height: 24px;
+			margin: 10px 0 5px;
+		}
+
+		.snip1533 h4 {
+			font-weight: 400;
+			margin: 0;
+			opacity: 0.5;
+		}
+
+		.snip1533 blockquote {
+			font-style: italic;
+			font-weight: 300;
+			margin: 0 0 20px;
+		}
+
+		/* Background and body styles */
+		body {
+			background-color: #ffffff;
+		}
+	</style>
 
 
-</style>
-
-<style>
-	@import url(https://fonts.googleapis.com/css?family=Roboto:300,400);
-@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
-
-/* Styles for the Testimonial section */
-.testimonials-container {
-margin: 0 auto; /* Horizontally centers the container */
-max-width: 1200px;
-padding: 20px;
-text-align: center; /* Centers the contents inside the container */
-}
-
-.snip1533 {
-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
-color: #9e9e9e;
-font-family: 'Roboto', Arial, sans-serif;
-font-size: 16px;
-margin: 20px;
-max-width: 310px;
-min-width: 250px;
-position: relative;
-text-align: center;
-background-color: #ffffff;
-border-radius: 5px;
-border-top: 5px solid #16A34A;
-display: inline-block; /* Ensures elements are displayed inline */
-}
-
-.snip1533 *,
-.snip1533 *:before {
-box-sizing: border-box;
-transition: all 0.1s ease-out;
-}
-
-.snip1533 figcaption {
-padding: 13% 10% 12%;
-}
-
-.snip1533 figcaption:before {
-transform: translateX(-50%);
-background-color: #fff;
-border-radius: 50%;
-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-color: #0090D7;
-content: "\f10e";
-font-family: 'FontAwesome';
-font-size: 32px;
-font-style: normal;
-left: 50%;
-line-height: 60px;
-position: absolute;
-top: -30px;
-width: 60px;
-}
-
-.snip1533 h3 {
-color: #3c3c3c;
-font-size: 20px;
-font-weight: 300;
-line-height: 24px;
-margin: 10px 0 5px;
-}
-
-.snip1533 h4 {
-font-weight: 400;
-margin: 0;
-opacity: 0.5;
-}
-
-.snip1533 blockquote {
-font-style: italic;
-font-weight: 300;
-margin: 0 0 20px;
-}
-
-/* Background and body styles */
-body {
-background-color: #ffffff;
-}
-
-
-</style>
-
-	
 
 
 </head>
+
 <body>
 
 
 	</head>
 
 
-	
 
-		<body>
 
-			<!-- Loader -->
-			<div id="page-preloader" style="display: none;"><span class="spinner"></span></div>
-			<!-- Loader end -->
-	
-	
-			<div class="layout-theme animated-css" data-header="sticky" data-header-top="200">
-	
-	
-				<!-- HEADER -->
-	
-				<div class="container">
-					<div class="row">
-						<div class="col-xs-12">
-							<header class="header">
-								<div class="header__wrap">
-									
-				
-									<a class="logo" href="home.html"><img class="logo__img" src="assets/img/EPort.svg" alt="Logo"></a>
-				
-									<div class="header__inner clearfix">
-										<nav class="navbar yamm">
-											<div class="navbar-header hidden-md hidden-lg hidden-sm">
-												<button type="button" data-toggle="collapse" data-target="#navbar-collapse-1" class="navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-											</div>
-											<div id="navbar-collapse-1" class="navbar-collapse collapse">
-												<ul class="nav navbar-nav">
-													<li class="active"><a href="home.html">Home</a></li>
-													<li ><a href="services.html">Services</a></li>
-													<li><a href="about.html">About Us</a></li>
-													<li><a href="blog-post.html">Blogs</a></li>
-													<li><a href="careers.html">Careers</a></li>
-													<li><a href="contact.html">Contact us</a></li>
-												</ul>
-											</div>
-										</nav>
-										<a class="header__btn btn btn-primary btn-sm btn-effect-2" href="https://eport.freightmanager.biz/">Login in Here</a>
-									</div>
+	<body>
+
+		<!-- Loader -->
+		<div id="page-preloader" style="display: none;"><span class="spinner"></span></div>
+		<!-- Loader end -->
+
+
+		<div class="layout-theme animated-css" data-header="sticky" data-header-top="200">
+
+
+			<!-- HEADER -->
+
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<header class="header">
+							<div class="header__wrap">
+
+
+								<a class="logo" href="home.html"><img class="logo__img" src="assets/img/EPort.svg"
+										alt="Logo"></a>
+
+								<div class="header__inner clearfix">
+									<nav class="navbar yamm">
+										<div class="navbar-header hidden-md hidden-lg hidden-sm">
+											<button type="button" data-toggle="collapse"
+												data-target="#navbar-collapse-1" class="navbar-toggle"><span
+													class="icon-bar"></span><span class="icon-bar"></span><span
+													class="icon-bar"></span></button>
+										</div>
+										<div id="navbar-collapse-1" class="navbar-collapse collapse">
+											<ul class="nav navbar-nav">
+												<li class="active"><a href="home.html">Home</a></li>
+												<li><a href="services.html">Services</a></li>
+												<li><a href="about.html">About Us</a></li>
+												<li><a href="blog-post.html">Blogs</a></li>
+												<li><a href="careers.html">Careers</a></li>
+												<li><a href="contact.html">Contact us</a></li>
+											</ul>
+										</div>
+									</nav>
+									<a class="header__btn btn btn-primary btn-sm btn-effect-2"
+										href="https://eport.freightmanager.biz/">Login in Here</a>
 								</div>
-							</header><!-- end header-->
-						</div><!-- end col-->
-					</div><!-- end row-->
-				</div><!-- end container-->
-						
-						
+							</div>
+						</header><!-- end header-->
+					</div><!-- end col-->
+				</div><!-- end row-->
+			</div><!-- end container-->
+
+
 
 
 			<div class="main-slider slider-pro wow" id="my-slider" data-slider-width="1600" data-slider-height="850">
@@ -243,636 +257,751 @@ background-color: #ffffff;
 
 					<!-- Slide 1 -->
 					<div class="sp-slide">
-						<img class="sp-image img-responsive" src="https://images.unsplash.com/photo-1617952739760-1dcae19a1d93?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="slider">
+						<img class="sp-image img-responsive"
+							src="https://images.unsplash.com/photo-1617952739760-1dcae19a1d93?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+							alt="slider">
 
-						<div class="sp-layer main-slider__title hidden-xs" data-horizontal="0" data-vertical="36%" data-width="100%" data-show-transition="left" data-hide-transition="right" data-show-duration="800" data-show-delay="400" data-hide-delay="400">
-								
+						<div class="sp-layer main-slider__title hidden-xs" data-horizontal="0" data-vertical="36%"
+							data-width="100%" data-show-transition="left" data-hide-transition="right"
+							data-show-duration="800" data-show-delay="400" data-hide-delay="400">
+
 						</div>
 
-						<div class="sp-layer" data-horizontal="0" data-vertical="43%" data-width="100%" data-show-transition="right" data-hide-transition="left" data-show-duration="800" data-show-delay="1000" data-hide-delay="400">
-								<div class="container">
-									<div class="main-slider__subtitle">
-										Your Global Logistics Partner</div>
-									<div class="decor-2 decor-2_mod-a decor-2_mod_white"></div>
-								</div>
+						<div class="sp-layer" data-horizontal="0" data-vertical="43%" data-width="100%"
+							data-show-transition="right" data-hide-transition="left" data-show-duration="800"
+							data-show-delay="1000" data-hide-delay="400">
+							<div class="container">
+								<div class="main-slider__subtitle">
+									Your Global Logistics Partner</div>
+								<div class="decor-2 decor-2_mod-a decor-2_mod_white"></div>
+							</div>
 						</div>
 
-						<div class="sp-layer main-slider__text" data-horizontal="0" data-vertical="55%" data-width="100%" data-height="30%" data-show-transition="up" data-hide-transition="buttom" data-show-duration="800" data-show-delay="2000" data-hide-delay="1200">
-								<div class="container">
-									<p class="hidden-xs">Seamless Solutions for Your Supply Chain Success</p>
-									<a class="btn btn_mod-b btn-effect" href="home.html"><span class="btn__inner">read more</span></a>
-								</div>
+						<div class="sp-layer main-slider__text" data-horizontal="0" data-vertical="55%"
+							data-width="100%" data-height="30%" data-show-transition="up" data-hide-transition="buttom"
+							data-show-duration="800" data-show-delay="2000" data-hide-delay="1200">
+							<div class="container">
+								<p class="hidden-xs">Seamless Solutions for Your Supply Chain Success</p>
+								<a class="btn btn_mod-b btn-effect" href="home.html"><span class="btn__inner">read
+										more</span></a>
+							</div>
 						</div>
 					</div>
 					<!-- end sp-slide -->
 
 					<!-- Slide 2 -->
 					<div class="sp-slide">
-						<img class="sp-image img-responsive" src="https://images.unsplash.com/photo-1598408745613-178751e2ccde?q=80&w=2531&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="slider">
+						<img class="sp-image img-responsive"
+							src="https://images.unsplash.com/photo-1598408745613-178751e2ccde?q=80&w=2531&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+							alt="slider">
 
-						<div class="sp-layer main-slider__title hidden-xs" data-horizontal="0" data-vertical="36%" data-width="100%" data-show-transition="left" data-hide-transition="right" data-show-duration="800" data-show-delay="400" data-hide-delay="400">
-								
+						<div class="sp-layer main-slider__title hidden-xs" data-horizontal="0" data-vertical="36%"
+							data-width="100%" data-show-transition="left" data-hide-transition="right"
+							data-show-duration="800" data-show-delay="400" data-hide-delay="400">
+
 						</div>
 
-						<div class="sp-layer" data-horizontal="0" data-vertical="43%" data-width="100%" data-show-transition="right" data-hide-transition="left" data-show-duration="800" data-show-delay="1000" data-hide-delay="400">
-								<div class="container">
-									<div class="main-slider__subtitle">
-										Synchronized Logistics Solutions</div>
-									<div class="decor-2 decor-2_mod-a decor-2_mod_white"></div>
-								</div>
+						<div class="sp-layer" data-horizontal="0" data-vertical="43%" data-width="100%"
+							data-show-transition="right" data-hide-transition="left" data-show-duration="800"
+							data-show-delay="1000" data-hide-delay="400">
+							<div class="container">
+								<div class="main-slider__subtitle">
+									Synchronized Logistics Solutions</div>
+								<div class="decor-2 decor-2_mod-a decor-2_mod_white"></div>
+							</div>
 						</div>
 
-						<div class="sp-layer main-slider__text" data-horizontal="0" data-vertical="55%" data-width="100%" data-height="30%" data-show-transition="up" data-hide-transition="buttom" data-show-duration="800" data-show-delay="2000" data-hide-delay="1200">
-								<div class="container">
-									<p class="hidden-xs">By maintaining &amp; monitoring our professionalism work</p>
-									<a class="btn btn_mod-b btn-effect" href="home.html"><span class="btn__inner">read more</span></a>
-								</div>
+						<div class="sp-layer main-slider__text" data-horizontal="0" data-vertical="55%"
+							data-width="100%" data-height="30%" data-show-transition="up" data-hide-transition="buttom"
+							data-show-duration="800" data-show-delay="2000" data-hide-delay="1200">
+							<div class="container">
+								<p class="hidden-xs">By maintaining &amp; monitoring our professionalism work</p>
+								<a class="btn btn_mod-b btn-effect" href="home.html"><span class="btn__inner">read
+										more</span></a>
+							</div>
 						</div>
 					</div>
 					<!-- end sp-slide -->
 
-					
-	
+
+
 
 				</div>
 
-				
+
 
 				<!-- end sp-slides -->
 			</div><!-- end main-slider -->
 
 
-			
-				
 
 
-			<section class="section-default wow">
-				<div class="container">
+
+
+
+
+
+
+
+
+
+			<section>
+				<div class="container wow">
+					<br>
+					<h2 class="ui-title-block ui-title-block_mod-a">Our Business Mission is Client’s Satisfaction</h2>
 					<div class="row">
 						<div class="col-xs-12">
-							<h2 class="ui-title-block ui-title-block_mod-a">Our Business Mission is Client’s Satisfaction</h2>
+							<div class="section-progress clearfix">
+								<ul class="list-progress list-progress_mod-a list-progress_left list-unstyled">
+									<li class="list-progress__item clearfix">
+										<div class="list-progress__inner">
+											<span class="list-progress__percent chart" data-percent="986"><span
+													class="percent"></span></span>
+											<span class="list-progress__name">Satisfied Clients</span>
+											<div class="decor-3"></div>
+										</div>
+									</li>
+									<li class="list-progress__item clearfix">
+										<div class="list-progress__inner">
+											<span class="list-progress__percent chart" data-percent="67"><span
+													class="percent"></span></span>
+											<span class="list-progress__name">Working Team</span>
+											<div class="decor-3"></div>
+										</div>
+									</li>
+									<li class="list-progress__item clearfix">
+										<div class="list-progress__inner">
+											<span class="list-progress__percent chart" data-percent="107"><span
+													class="percent"></span></span>
+											<span class="list-progress__name">Years of Experience</span>
+											<div class="decor-3"></div>
+										</div>
+									</li>
+								</ul><!-- end list-progress -->
 
-							<div class="owl-carousel owl-theme owl-theme_mod-b enable-owl-carousel" data-pagination="false" data-navigation="false" data-single-item="true" data-auto-play="7000" data-transition-style="fade" data-main-text-animation="true" data-after-init-delay="3000" data-after-move-delay="1000" data-stop-on-hover="true">
+								<ul class="list-progress list-progress_mod-a list-progress_right list-unstyled">
+									<li class="list-progress__item clearfix">
+										<div class="list-progress__inner">
+											<span class="list-progress__percent chart" data-percent="15360"><span
+													class="percent"></span></span>
+											<span class="list-progress__name">Billing Filed</span>
+											<div class="decor-3"></div>
+										</div>
+									</li>
+									<li class="list-progress__item clearfix">
+										<div class="list-progress__inner">
+											<span class="list-progress__percent chart" data-percent="07"><span
+													class="percent"></span></span>
+											<span class="list-progress__name">Our Branches</span>
+											<div class="decor-3"></div>
+										</div>
+									</li>
+									<li class="list-progress__item clearfix">
+										<div class="list-progress__inner">
+											<span class="list-progress__percent chart" data-percent="7683"><span
+													class="percent"></span></span>
+											<span class="list-progress__name">Total Deliveries</span>
+											<div class="decor-3"></div>
+										</div>
+									</li>
+								</ul><!-- end list-progress -->
 
-								
-
-								
-
-							</div><!-- end slider -->
+								<div class="progress-center">
+									<img class="center-block img-responsive" src="assets/img/airplane-png-27939.png"
+										alt="background">
+									<a class="progress-center__link prettyPhoto" href="assets/img/EPORT Video.mp4"><i
+											class="icon fa fa-play"></i></a>
+									<div class="progress-center__title ui-title-inner">watch the tour video</div>
+								</div>
+							</div><!-- end section-progress -->
 						</div><!-- end col -->
 					</div><!-- end row -->
 				</div><!-- end container -->
-			</section><!-- end section-default -->
 
 
-			<div class="container wow">
-				<div class="row">
-					<div class="col-xs-12">
-						<div class="section-progress clearfix">
-							<ul class="list-progress list-progress_mod-a list-progress_left list-unstyled">
-								<li class="list-progress__item clearfix">
-									<div class="list-progress__inner">
-										<span class="list-progress__percent chart" data-percent="986"><span class="percent">986</span><canvas height="0" width="0"></canvas></span>
-										<span class="list-progress__name">Satisfied Clients</span>
-										<div class="decor-3"></div>
-									</div>
-								</li>
-								<li class="list-progress__item clearfix">
-									<div class="list-progress__inner">
-										<span class="list-progress__percent chart" data-percent="67"><span class="percent">67</span><canvas height="0" width="0"></canvas></span>
-										<span class="list-progress__name">Working Team</span>
-										<div class="decor-3"></div>
-									</div>
-								</li>
-								<li class="list-progress__item clearfix">
-									<div class="list-progress__inner">
-										<span class="list-progress__percent chart" data-percent="107"><span class="percent">15</span><canvas height="0" width="0"></canvas></span>
-										<span class="list-progress__name">Years of experience</span>
-										<div class="decor-3"></div>
-									</div>
-								</li>
-							</ul><!-- end list-progress -->
-
-							<ul class="list-progress list-progress_mod-a list-progress_right list-unstyled">
-								<li class="list-progress__item clearfix">
-									<div class="list-progress__inner">
-										<span class="list-progress__percent chart" data-percent="15360"><span class="percent">15360</span><canvas height="0" width="0"></canvas></span>
-										<span class="list-progress__name">Billing Filed</span>
-										<div class="decor-3"></div>
-									</div>
-								</li>
-								<li class="list-progress__item clearfix">
-									<div class="list-progress__inner">
-										<span class="list-progress__percent chart" data-percent="07"><span class="percent">07</span><canvas height="0" width="0"></canvas></span>
-										<span class="list-progress__name">Our Branches</span>
-										<div class="decor-3"></div>
-									</div>
-								</li>
-								<li class="list-progress__item clearfix">
-									<div class="list-progress__inner">
-										<span class="list-progress__percent chart" data-percent="7683"><span class="percent">7683</span><canvas height="0" width="0"></canvas></span>
-										<span class="list-progress__name">Total Deliveries</span>
-										<div class="decor-3"></div>
-									</div>
-								</li>
-							</ul><!-- end list-progress -->
-
-							<div class="progress-center">
-								<img class="center-block img-responsive" src="assets/img/airplane-png-27939.png" alt="background">
-								
-							</div>
-						</div><!-- end section-progress -->
-					</div><!-- end col -->
-				</div><!-- end row -->
-			</div>
 
 
-			<div class="slider-thumbnails wow">
-				<div id="slider-product" class="flexslider slider-thumbnails-main">
-					<ul class="slides">
-						<li class="slider-thumbnails-main__item">
-							<div class="slider-thumbnails-main__img">
-								<img class="img-responsive" src="https://images.unsplash.com/photo-1524592714635-d77511a4834d?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Foto">
-							</div>
-							<div class="slider-thumbnails-main__info">
-								<i class="slider-thumbsnails-main__icon flaticon-airplane68"></i>
-								<div class="decor-2 decor-2_mod_white"></div>
-								<div class="slider-thumbsnails-main__text">
-									<p>Your Logistics Compass</p>
-									<p>Let us handle the complexities of forwarding. Our strategic forwarding as a service simplifies your supply chain, guiding your shipments from origin to final destination.
+
+				<div class="slider-thumbnails wow">
+					<div id="slider-product" class="flexslider slider-thumbnails-main">
+						<ul class="slides">
+							<li class="slider-thumbnails-main__item">
+								<div class="slider-thumbnails-main__img">
+									<img class="img-responsive"
+										src="https://images.unsplash.com/photo-1524592714635-d77511a4834d?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+										alt="Foto">
+								</div>
+								<div class="slider-thumbnails-main__info">
+									<i class="slider-thumbsnails-main__icon flaticon-airplane68"></i>
+									<div class="decor-2 decor-2_mod_white"></div>
+									<div class="slider-thumbsnails-main__text">
+										<p>Your Logistics Compass</p>
+										<p>Let us handle the complexities of forwarding. Our strategic forwarding as a
+											service simplifies your supply chain, guiding your shipments from origin to
+											final destination.
 										</p>
 										<a href="forwarding.html" class="read-more">Read More</a>
+									</div>
 								</div>
-							</div>
-						</li>
-						<li class="slider-thumbnails-main__item">
-							<div class="slider-thumbnails-main__img">
-								<img class="img-responsive" src="https://images.unsplash.com/photo-1485575301924-6891ef935dcd?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Foto">
-							</div>
-							<div class="slider-thumbnails-main__info">
-								<i class="slider-thumbsnails-main__icon flaticon-envelope53"></i>
-								<div class="decor-2 decor-2_mod_white"></div>
-								<div class="slider-thumbsnails-main__text">
-									<p>Effortless Logistics Transition</p>
-									<p>Trust our clearing service to simplify customs and regulations, ensuring seamless transitions for your goods, and clear the path for your business success.</p>
-									<a href="clearing.html" class="read-more">Read More</a>
+							</li>
+							<li class="slider-thumbnails-main__item">
+								<div class="slider-thumbnails-main__img">
+									<img class="img-responsive"
+										src="https://images.unsplash.com/photo-1485575301924-6891ef935dcd?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+										alt="Foto">
 								</div>
-							</div>
-						</li>
-						
-						<li class="slider-thumbnails-main__item">
-							<div class="slider-thumbnails-main__img">
-								<img class="img-responsive" src="https://images.unsplash.com/photo-1494412519320-aa613dfb7738?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Foto">
-							</div>
-							<div class="slider-thumbnails-main__info">
-								<i class="slider-thumbsnails-main__icon flaticon-delivery56"></i>
-								<div class="decor-2 decor-2_mod_white"></div>
-								<div class="slider-thumbsnails-main__text">
-									<p>Handled with Care, Delivered with Precision</p>
-									<p>Experience transportation elevated. Our end-to-end logistics manage every step, from seamless pickup to precise delivery.
+								<div class="slider-thumbnails-main__info">
+									<i class="slider-thumbsnails-main__icon flaticon-envelope53"></i>
+									<div class="decor-2 decor-2_mod_white"></div>
+									<div class="slider-thumbsnails-main__text">
+										<p>Effortless Logistics Transition</p>
+										<p>Trust our clearing service to simplify customs and regulations, ensuring
+											seamless transitions for your goods, and clear the path for your business
+											success.</p>
+										<a href="clearing.html" class="read-more">Read More</a>
+									</div>
+								</div>
+							</li>
+
+							<li class="slider-thumbnails-main__item">
+								<div class="slider-thumbnails-main__img">
+									<img class="img-responsive"
+										src="https://images.unsplash.com/photo-1494412519320-aa613dfb7738?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+										alt="Foto">
+								</div>
+								<div class="slider-thumbnails-main__info">
+									<i class="slider-thumbsnails-main__icon flaticon-delivery56"></i>
+									<div class="decor-2 decor-2_mod_white"></div>
+									<div class="slider-thumbsnails-main__text">
+										<p>Handled with Care, Delivered with Precision</p>
+										<p>Experience transportation elevated. Our end-to-end logistics manage every
+											step, from seamless pickup to precise delivery.
 										</p>
 										<a href="cargo.html" class="read-more">Read More</a>
 									</div>
-							</div>
-						</li>
-						<li class="slider-thumbnails-main__item">
-							<div class="slider-thumbnails-main__img">
-								<img class="img-responsive" src="https://images.unsplash.com/photo-1605745341112-85968b19335b?q=80&w=2671&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Foto">
-							</div>
-							<div class="slider-thumbnails-main__info">
-								<i class="slider-thumbsnails-main__icon flaticon-ship3"></i>
-								<div class="decor-2 decor-2_mod_white"></div>
-								<div class="slider-thumbsnails-main__text">
-									<p>Safeguarding Your Maritime Journey</p>
-									<p>Cargo safe, finances secure. Marine insurance + ECGC cover both accidents & buyer defaults.</p>
-									<a href="marine.html" class="read-more">Read More</a>
 								</div>
-							</div>
-						</li>
-					
-						<li class="slider-thumbnails-main__item">
-							<div class="slider-thumbnails-main__img">
-								<img class="img-responsive" src="https://images.unsplash.com/photo-1587293852726-70cdb56c2866?q=80&w=2672&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Foto">
-							</div>
-							<div class="slider-thumbnails-main__info">
-								<i class="slider-thumbsnails-main__icon flaticon-industrial2"></i>
-								<div class="decor-2 decor-2_mod_white"></div>
-								<div class="slider-thumbsnails-main__text">
-									<p>Where Your Inventory Finds a Home</p>
-									<p>In logistics, a secure home for your inventory is crucial. Our warehousing solutions offer that safe haven. Whether short-term storage or long-term inventory management, we maintain your goods in optimal conditions, always prepared for their next move in the supply chain.</p>
-									<a href="warehousing.html" class="read-more">Read More</a>
+							</li>
+							<li class="slider-thumbnails-main__item">
+								<div class="slider-thumbnails-main__img">
+									<img class="img-responsive"
+										src="https://images.unsplash.com/photo-1605745341112-85968b19335b?q=80&w=2671&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+										alt="Foto">
 								</div>
-							</div>
-						</li>
-					</ul>
-				</div>
-		
-				<div id="carousel-product" class="flexslider slider-thumbnails-nav">
-					<ul class="slides">
-						<li class="slider-thumbnails-nav__item">
-							<div class="slider-thumbnails-nav__text"><span class="decor-3 decor-3_mod-a"></span>Forwarding</div>
-							<span class="helper-2"></span>
-						</li>
-						<li class="slider-thumbnails-nav__item">
-							<div class="slider-thumbnails-nav__text"><span class="decor-3 decor-3_mod-a"></span>Clearing</div>
-							<span class="helper-2"></span>
-						</li>
-						
-						<li class="slider-thumbnails-nav__item">
-							<div class="slider-thumbnails-nav__text"><span class="decor-3 decor-3_mod-a"></span>End to End Logistics</div>
-							<span class="helper-2"></span>
-						</li>
-						<li class="slider-thumbnails-nav__item">
-							<div class="slider-thumbnails-nav__text"><span class="decor-3 decor-3_mod-a"></span>Insurance</div>
-							<span class="helper-2"></span>
-						</li>
-						
-						<li class="slider-thumbnails-nav__item">
-							<div class="slider-thumbnails-nav__text"><span class="decor-3 decor-3_mod-a"></span>Warehousing Solutions</div>
-							<span class="helper-2"></span>
-						</li>
-					</ul>
-				</div>
-			</div><!-- end slider-thumbnails -->
+								<div class="slider-thumbnails-main__info">
+									<i class="slider-thumbsnails-main__icon flaticon-ship3"></i>
+									<div class="decor-2 decor-2_mod_white"></div>
+									<div class="slider-thumbsnails-main__text">
+										<p>Safeguarding Your Maritime Journey</p>
+										<p>Cargo safe, finances secure. Marine insurance + ECGC cover both accidents &
+											buyer defaults.</p>
+										<a href="marine.html" class="read-more">Read More</a>
+									</div>
+								</div>
+							</li>
 
-
-			<section class="section_mod-a section_mod-e">
-				<div class="container">
-					<div class="row">
-						<div class="col-xs-12">
-							<h2 class="ui-title-block"><span class="ui-title-emphasis">why choose us</h2>
-							<div class="decor-1"><i class="icon flaticon-airplane68"></i></div>
-							<div class="ui-subtitle-block ui-subtitle-block_mod-a">Handled with Care, Delivered with Precision
-								</div><div style="text-align: center;">
-    <p>We view your cargo as a promise, not just goods. With our cargo handling services, each item receives meticulous care and attention. Our commitment to precision at every stage guarantees that your cargo arrives at its destination intact and on time.</p>
-</div><br>
-
-						</div>
+							<li class="slider-thumbnails-main__item">
+								<div class="slider-thumbnails-main__img">
+									<img class="img-responsive"
+										src="https://images.unsplash.com/photo-1587293852726-70cdb56c2866?q=80&w=2672&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+										alt="Foto">
+								</div>
+								<div class="slider-thumbnails-main__info">
+									<i class="slider-thumbsnails-main__icon flaticon-industrial2"></i>
+									<div class="decor-2 decor-2_mod_white"></div>
+									<div class="slider-thumbsnails-main__text">
+										<p>Where Your Inventory Finds a Home</p>
+										<p>In logistics, a secure home for your inventory is crucial. Our warehousing
+											solutions offer that safe haven. Whether short-term storage or long-term
+											inventory management, we maintain your goods in optimal conditions, always
+											prepared for their next move in the supply chain.</p>
+										<a href="warehousing.html" class="read-more">Read More</a>
+									</div>
+								</div>
+							</li>
+						</ul>
 					</div>
-					<div class="row">
-						<div class="col-md-5 col-sm-7">
-							<ul class="list-features list-features_mod-b list-unstyled">
-								<li class="list-features__item">
-									<i class="list-features__icon flaticon-head39"></i>
-									<div class="list-features__inner">
-										<h3 class="list-features__title ui-title-inner">Reliability</h3>
-										<div class="list-features__description">We are unwavering in our commitment to being a reliable partner. Reliability is the cornerstone
-											of our relationships with clients and team members alike. You can count on us to deliver on our
-											promises, every time.
-											</div>
-									</div>
-								</li>
-								<li class="list-features__item">
-									<i class="list-features__icon flaticon-delivery56"></i>
-									<div class="list-features__inner">
-										<h3 class="list-features__title ui-title-inner">Efficiency</h3>
-										<div class="list-features__description">Efficiency is the driving force behind everything we do. We believe in streamlining processes,
-											optimizing routes, and using resources judiciously. We are relentless in our pursuit of efficiency,
-											ensuring swift and seamless logistics solutions.</div>
-									</div>
-								</li>
-								
-								<li class="list-features__item">
-									<i class="list-features__icon flaticon-transport643"></i>
-									<div class="list-features__inner">
-										<h3 class="list-features__title ui-title-inner">Integrity</h3>
-										<div class="list-features__description">Integrity is our guiding light. We conduct our business with the highest ethical standards and
-											transparency. Honesty and trust are the foundation of our relationships, be it with clients, team
-											members, or stakeholders.</div>
-									</div>
-								</li>
-								<li class="list-features__item">
-									<i class="list-features__icon flaticon-hour14"></i>
-									<div class="list-features__inner">
-										<h3 class="list-features__title ui-title-inner">Customer Centricity</h3>
-										<div class="list-features__description">Integrity is our guiding light. We conduct our business with the highest ethical standards and
-											transparency. Honesty and trust are the foundation of our relationships, be it with clients, team
-											members, or stakeholders.</div>
-									</div>
-								</li>
-							</ul>
-						</div>
-						<div class="col-md-7 col-sm-5">
-							<img class="img-responsive" src="assets/img/bgeport1.png" alt="Foto">
-						</div>
+
+					<div id="carousel-product" class="flexslider slider-thumbnails-nav">
+						<ul class="slides">
+							<li class="slider-thumbnails-nav__item">
+								<div class="slider-thumbnails-nav__text"><span
+										class="decor-3 decor-3_mod-a"></span>Forwarding</div>
+								<span class="helper-2"></span>
+							</li>
+							<li class="slider-thumbnails-nav__item">
+								<div class="slider-thumbnails-nav__text"><span
+										class="decor-3 decor-3_mod-a"></span>Clearing</div>
+								<span class="helper-2"></span>
+							</li>
+
+							<li class="slider-thumbnails-nav__item">
+								<div class="slider-thumbnails-nav__text"><span class="decor-3 decor-3_mod-a"></span>End
+									to End Logistics</div>
+								<span class="helper-2"></span>
+							</li>
+							<li class="slider-thumbnails-nav__item">
+								<div class="slider-thumbnails-nav__text"><span
+										class="decor-3 decor-3_mod-a"></span>Insurance</div>
+								<span class="helper-2"></span>
+							</li>
+
+							<li class="slider-thumbnails-nav__item">
+								<div class="slider-thumbnails-nav__text"><span
+										class="decor-3 decor-3_mod-a"></span>Warehousing Solutions</div>
+								<span class="helper-2"></span>
+							</li>
+						</ul>
 					</div>
-				</div>
-			</section><!-- end section -->
+				</div><!-- end slider-thumbnails -->
 
 
-		
-
-						
-
-						
-
-
-			<section class="testimonials-container">
-				<figure class="snip1533">
-				  <figcaption>
-					<blockquote>
-					  <p>"For a growing company like ours, efficient logistics are crucial. ePort Logistics has been a game-changer! Their bonded warehousing solutions have freed up a significant amount of working capital, allowing us to invest in further growth opportunities.  Their communication is clear and consistent, and I have complete confidence knowing our inventory is secure in their state-of-the-art facilities."</p>
-					</blockquote>
-					<h3>Venkitesh </h3>
-					<h4>(Emerald Enterprises)</h4>
-				  </figcaption>
-				</figure>
-				<figure class="snip1533">
-				  <figcaption>
-					<blockquote>
-					  <p>"ePort Logistics goes above and beyond in this regard. Their flexible warehousing options allowed us to choose the perfect environment for our light fixtures, and their air freight services ensure they arrive at their destination safely and on time.  We highly recommend ePort Logistics for any company that values expertise and a customer-centric approach."<br><br><br></p>
-					</blockquote>
-					<h3>Azim</h3>
-					<h4>(Lumos)</h4>
-				  </figcaption>
-				</figure>
-				<figure class="snip1533">
-				  <figcaption>
-					<blockquote>
-					  <p>"Their end-to-end services take care of everything, from origin pickup to customs clearance.  Their multilingual staff ensures seamless communication across borders, and their real-time tracking system allows us to closely monitor our shipments every step of the way. ePort Logistics is a true partner in our success."<br><br> <br><br></p>
-					</blockquote>
-					<h3>Ajay</h3>
-					<h4>(ABC Rowanda)</h4>
-				  </figcaption>
-				</figure>
-			  </section>
-
-
-			<!-- end section -->
-
-			
-			<div class="marquee">
-				<h2 class="ui-title-block"><span class="ui-title-emphasis"></span>Our Affiliations</h2>
-				<br>
-				<div class="marquee-content"> 
-				
-					<div class="marquee-item">
-						<img src="assets/media/clients/1.png" alt="">
-					  </div>
-					  
-					  <div class="marquee-item">
-						<img src="assets/media/clients/2.png" alt="">
-					  </div>
-					  
-					  <div class="marquee-item">
-						<img src="assets/media/clients/3.png" alt="">
-					  </div>
-					  
-					  <div class="marquee-item">
-						<img src="assets/media/clients/4.png" alt="">
-					  </div>
-					  
-					  <div class="marquee-item">
-						<img src="assets/media/clients/5.png" alt="">
-					  </div>
-					  <div class="marquee-item">
-						<img src="assets/media/clients/6.png" alt="">
-					  </div>
-					  
-					  <div class="marquee-item">
-						<img src="assets/media/clients/1.png" alt="">
-					  </div>
-					  
-					  <div class="marquee-item">
-						<img src="assets/media/clients/2.png" alt="">
-					  </div>
-					  
-					  <div class="marquee-item">
-						<img src="assets/media/clients/3.png" alt="">
-					  </div>
-					  
-					  <div class="marquee-item">
-						<img src="assets/media/clients/4.png" alt="">
-					  </div>
-					  <div class="marquee-item">
-						<img src="assets/media/clients/5.png" alt="">
-					  </div>
-					  
-					  <div class="marquee-item">
-						<img src="assets/media/clients/6.png" alt="">
-					  </div>
-					  
-					  <div class="marquee-item">
-						<img src="assets/media/clients/1.png" alt="">
-					  </div>
-					  
-					  <div class="marquee-item">
-						<img src="assets/media/clients/2.png" alt="">
-					  </div>
-					  
-					  <div class="marquee-item">
-						<img src="assets/media/clients/3.png" alt="">
-					  </div>
-					  <div class="marquee-item">
-						<img src="assets/media/clients/4.png" alt="">
-					  </div>
-					  
-					  <div class="marquee-item">
-						<img src="assets/media/clients/5.png" alt="">
-					  </div>
-					  
-					  <div class="marquee-item">
-						<img src="assets/media/clients/6.png" alt="">
-					  </div>
-					  
-					  <div class="marquee-item">
-						<img src="assets/media/clients/1.png" alt="">
-					  </div>
-					  
-					  <div class="marquee-item">
-						<img src="assets/media/clients/2.png" alt="">
-					  </div>
-					  <div class="marquee-item">
-						<img src="assets/media/clients/3.png" alt="">
-					  </div>
-					  <div class="marquee-item">
-						<img src="assets/media/clients/4.png" alt="">
-					  </div>
-					  <div class="marquee-item">
-						<img src="assets/media/clients/5.png" alt="">
-					  </div>
-					  <div class="marquee-item">
-						<img src="assets/media/clients/6.png" alt="">
-					  </div>
-					 
-					 
-					 
-				  
-				</div>
-			  </div>
-			
-			
-
-
-
-
-			<br>
-
-
-			<div class="ram">
-				
-				<div class="section__inner">
+				<section class="section_mod-a section_mod-e">
 					<div class="container">
 						<div class="row">
 							<div class="col-xs-12">
+								<h2 class="ui-title-block"><span class="ui-title-emphasis">why choose us</h2>
+								<div class="decor-1"><i class="icon flaticon-airplane68"></i></div>
+								<div class="ui-subtitle-block ui-subtitle-block_mod-a">Handled with Care, Delivered with
+									Precision
+								</div>
+								<div style="text-align: center;">
+									<p>We view your cargo as a promise, not just goods. With our cargo handling
+										services, each item receives meticulous care and attention. Our commitment to
+										precision at every stage guarantees that your cargo arrives at its destination
+										intact and on time.</p>
+								</div><br>
 
-								<div class="section-subscribe clearfix">
-									<div class="subscribe__inner">
-										<h2 class="subscribe__title">register for newsletter</h2>
-										<div class="subscribe__info">get latest company news</div>
-									</div>
-									<form class="form-subscribe" id="subscribeForm" method="post" action="https://script.google.com/macros/s/AKfycbwBewzGV4ouGdrPIUdzt_E8hIrT1bZTcyu7-w7-geVV2z3JwteVSsa-bK6HEv8EaNi3/exec">
-										<input class="form-subscribe__input form-control" id="emailInput" name="email" type="email" placeholder="Enter your email address" required>
-										<button class="form-subscribe__btn btn btn_mod-c btn-sm btn-effect" type="submit"><span class="btn__inner">Subscribe</span></button>
-									</form>
-									
-									<div class="subscribe__decor decor-4"><i class="subscribe__icon icon flaticon-envelope53"></i></div>
-								</div><!-- end subscribe -->
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-5 col-sm-7">
+								<ul class="list-features list-features_mod-b list-unstyled">
+									<li class="list-features__item">
+										<i class="list-features__icon flaticon-head39"></i>
+										<div class="list-features__inner">
+											<h3 class="list-features__title ui-title-inner">Reliability</h3>
+											<div class="list-features__description">We are unwavering in our commitment
+												to being a reliable partner. Reliability is the cornerstone
+												of our relationships with clients and team members alike. You can count
+												on us to deliver on our
+												promises, every time.
+											</div>
+										</div>
+									</li>
+									<li class="list-features__item">
+										<i class="list-features__icon flaticon-delivery56"></i>
+										<div class="list-features__inner">
+											<h3 class="list-features__title ui-title-inner">Efficiency</h3>
+											<div class="list-features__description">Efficiency is the driving force
+												behind everything we do. We believe in streamlining processes,
+												optimizing routes, and using resources judiciously. We are relentless in
+												our pursuit of efficiency,
+												ensuring swift and seamless logistics solutions.</div>
+										</div>
+									</li>
+
+									<li class="list-features__item">
+										<i class="list-features__icon flaticon-transport643"></i>
+										<div class="list-features__inner">
+											<h3 class="list-features__title ui-title-inner">Integrity</h3>
+											<div class="list-features__description">Integrity is our guiding light. We
+												conduct our business with the highest ethical standards and
+												transparency. Honesty and trust are the foundation of our relationships,
+												be it with clients, team
+												members, or stakeholders.</div>
+										</div>
+									</li>
+									<li class="list-features__item">
+										<i class="list-features__icon flaticon-hour14"></i>
+										<div class="list-features__inner">
+											<h3 class="list-features__title ui-title-inner">Customer Centricity</h3>
+											<div class="list-features__description">Integrity is our guiding light. We
+												conduct our business with the highest ethical standards and
+												transparency. Honesty and trust are the foundation of our relationships,
+												be it with clients, team
+												members, or stakeholders.</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="col-md-7 col-sm-5">
+								<img class="img-responsive" src="assets/img/bgeport1.png" alt="Foto">
+							</div>
+						</div>
+					</div>
+				</section><!-- end section -->
+
+				<hr>
+
+				<section class="testimonials-container">
+					<h2 class="ui-title-block"><span class="ui-title-emphasis"></span>Testimonials</h2>
+					<figure class="snip1533">
+						<figcaption>
+							<blockquote>
+								<p>"For a growing company like ours, efficient logistics are crucial. ePort Logistics
+									has been a game-changer! Their bonded warehousing solutions have freed up a
+									significant amount of working capital, allowing us to invest in further growth
+									opportunities. Their communication is clear and consistent, and I have complete
+									confidence knowing our inventory is secure in their state-of-the-art facilities."
+								</p>
+							</blockquote>
+							<h3>Venkitesh </h3>
+							<h4>(Emerald Enterprises)</h4>
+						</figcaption>
+					</figure>
+					<figure class="snip1533">
+						<figcaption>
+							<blockquote>
+								<p>"ePort Logistics goes above and beyond in this regard. Their flexible warehousing
+									options allowed us to choose the perfect environment for our light fixtures, and
+									their air freight services ensure they arrive at their destination safely and on
+									time. We highly recommend ePort Logistics for any company that values expertise and
+									a customer-centric approach."<br><br><br></p>
+							</blockquote>
+							<h3>Azim</h3>
+							<h4>(Lumos)</h4>
+						</figcaption>
+					</figure>
+					<figure class="snip1533">
+						<figcaption>
+							<blockquote>
+								<p>"Their end-to-end services take care of everything, from origin pickup to customs
+									clearance. Their multilingual staff ensures seamless communication across borders,
+									and their real-time tracking system allows us to closely monitor our shipments every
+									step of the way. ePort Logistics is a true partner in our success."<br><br> <br><br>
+								</p>
+							</blockquote>
+							<h3>Ajay</h3>
+							<h4>(ABC Rowanda)</h4>
+						</figcaption>
+					</figure>
+				</section>
 
 
-								<footer class="footer">
-									<div class="footer-main">
-										<div class="section__inner">
-											<div class="row">
-												<div class="col-lg-5 col-md-3">
-													<div class="footer__section">
-														<a class="footer__logo" href="home.html"><img src="assets/img/EPORT LOGO.png" alt="Logo" width="100" height="100"></a>
-														<div class="footer__info">
-															<p>e-Port Logistics, where precision meets passion. We're not just another logistics company; we're your strategic logistics partner, navigating the complex terrain of supply chains with a focus on efficiency. Our goal is simple - deliver beyond expectations, every time.  </p>
-															
-														</div>
-														<ul class="social-links social-links_mod-a list-inline">
-															
-															<li><a target="_blank" href="https://www.linkedin.com/"><i class="icons fa fa-linkedin"></i></a></li>
-															<li><a target="_blank" href="https://www.google.com/"><i class="icons fa fa-google-plus"></i></a></li>
-															
-														</ul>
-													</div>
-												</div><!-- end col -->
+				<!-- end section -->
 
-												<div class="col-lg-2 col-md-3">
-													<section class="footer__section">
-														<h3 class="footer__title">services offered</h3>
-														<div class="decor-2 decor-2_mod-b decor-2_mod_white"></div>
-														<ul class="footer-list list-unstyled">
-															<li class="footer-list__item">
-																<a class="footer-list__link" href="forwarding.html">Forwarding</a>
-															</li>
-															<li class="footer-list__item">
-																<a class="footer-list__link" href="clearing.html">Clearing</a>
-															</li>
-															
-															<li class="footer-list__item">
-																<a class="footer-list__link" href="cargo.html">End to End Logistics</a>
-															</li>
-															<li class="footer-list__item">
-																<a class="footer-list__link" href="marine.html">Insurance</a>
-															</li>
-															<li class="footer-list__item">
-																<a class="footer-list__link" href="warehousing.html">Warehousing Solutions</a>
-															</li>
-															
-														</ul>
-													</section>
-												</div><!-- end col -->
 
-												<div class="col-lg-2 col-md-3">
-													<section class="footer__section">
-														<h3 class="footer__title">Quick links</h3>
-														<div class="decor-2 decor-2_mod-b decor-2_mod_white"></div>
-														<ul class="footer-list list-unstyled">
-															<li class="footer-list__item">
-																<a class="footer-list__link" href="home.html">Home</a>
-															</li>
-															<li class="footer-list__item">
-																<a class="footer-list__link" href="services.html">Services</a>
-															</li>
-															<li class="footer-list__item">
-																<a class="footer-list__link" href="about.html">About Us</a>
-															</li>
-															<li class="footer-list__item">
-																<a class="footer-list__link" href="blog-post.html">Blogs</a>
-															</li>
-															<li class="footer-list__item">
-																<a class="footer-list__link" href="contact.html">Contact Us</a>
-															</li>
-														</ul>
-													</section>
-												</div><!-- end col -->
+				<div class="marquee">
+					<h2 class="ui-title-block"><span class="ui-title-emphasis"></span>Our Affiliations</h2>
+					<br>
+					<div class="marquee-content">
 
-												<div class="col-md-3">
-													<section class="footer__section">
-														<h3 class="footer__title">Contact details</h3>
-														<div class="decor-2 decor-2_mod-b decor-2_mod_white"></div>
-														<div class="footer-contact">
-															<div class="footer-contact__inner">
-																<div class="footer-contact__title">
-																	M/s. E-PORT LOGISTICS PVT. LTD
-																	
-																	</div>
-																<div class="footer-contact__info">22/88, 3RD Floor, Mahalakshmi Apartment, Near Sowthambika Kalyana Mandapam, College Road, Tirupur – 641 602</div>
-																<div class="footer-contact__info">Phone: 91 44 2233 1825</div>
-																<div class="footer-contact__info">Email: <a href="mailto:inquiry@domain.com">sales@eport.in</a></div>
-																<select id="addressSelect" class="form-control">
-																	<option >Search Branches</option>
-																	
-																	<option value="1">Coimbatore</option>
-																	<option value="2">Tirupur</option>
-																	<option value="3">Karur</option>
-																	<option value="4">Thoothukudi</option>
-																	<option value="5">Bangalore</option>
-																	<option value="6">Cohin</option>
-																	<option value="7">Mumbai</option>
-																	<option value="8">Mundra</option>
-																	<option value="9">Delhi</option>
-																  </select>
-																  
-																  <div class="modal fade" id="addressModal" tabindex="-1" role="dialog" aria-labelledby="addressModalLabel" aria-hidden="true">
-																	<div class="modal-dialog" role="document" style="z-index: 1060;">
-																	  <div class="modal-content">
-																		<div class="modal-header">
-																		  <h5 class="modal-title" id="addressModalLabel">Address Details</h5>
-																		  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-																			<span aria-hidden="true">&times;</span>
-																		  </button>
-																		</div>
-																		<div class="modal-body" id="addressDetails">
-																		  <!-- Address details will be displayed here -->
-																		</div>
-																		<div class="modal-footer">
-																		  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-																		</div>
-																	  </div>
-																	</div>
-																  </div>
-																<div class="footer-contact__note">You can also view our other branches address information by selecting branch above.</div>
+						<div class="marquee-item">
+							<img src="assets/media/clients/1.png" alt="">
+						</div>
+
+						<div class="marquee-item">
+							<img src="assets/media/clients/2.png" alt="">
+						</div>
+
+						<div class="marquee-item">
+							<img src="assets/media/clients/3.png" alt="">
+						</div>
+
+						<div class="marquee-item">
+							<img src="assets/media/clients/4.png" alt="">
+						</div>
+
+						<div class="marquee-item">
+							<img src="assets/media/clients/5.png" alt="">
+						</div>
+						<div class="marquee-item">
+							<img src="assets/media/clients/6.png" alt="">
+						</div>
+
+						<div class="marquee-item">
+							<img src="assets/media/clients/1.png" alt="">
+						</div>
+
+						<div class="marquee-item">
+							<img src="assets/media/clients/2.png" alt="">
+						</div>
+
+						<div class="marquee-item">
+							<img src="assets/media/clients/3.png" alt="">
+						</div>
+
+						<div class="marquee-item">
+							<img src="assets/media/clients/4.png" alt="">
+						</div>
+						<div class="marquee-item">
+							<img src="assets/media/clients/5.png" alt="">
+						</div>
+
+						<div class="marquee-item">
+							<img src="assets/media/clients/6.png" alt="">
+						</div>
+
+						<div class="marquee-item">
+							<img src="assets/media/clients/1.png" alt="">
+						</div>
+
+						<div class="marquee-item">
+							<img src="assets/media/clients/2.png" alt="">
+						</div>
+
+						<div class="marquee-item">
+							<img src="assets/media/clients/3.png" alt="">
+						</div>
+						<div class="marquee-item">
+							<img src="assets/media/clients/4.png" alt="">
+						</div>
+
+						<div class="marquee-item">
+							<img src="assets/media/clients/5.png" alt="">
+						</div>
+
+						<div class="marquee-item">
+							<img src="assets/media/clients/6.png" alt="">
+						</div>
+
+						<div class="marquee-item">
+							<img src="assets/media/clients/1.png" alt="">
+						</div>
+
+						<div class="marquee-item">
+							<img src="assets/media/clients/2.png" alt="">
+						</div>
+						<div class="marquee-item">
+							<img src="assets/media/clients/3.png" alt="">
+						</div>
+						<div class="marquee-item">
+							<img src="assets/media/clients/4.png" alt="">
+						</div>
+						<div class="marquee-item">
+							<img src="assets/media/clients/5.png" alt="">
+						</div>
+						<div class="marquee-item">
+							<img src="assets/media/clients/6.png" alt="">
+						</div>
+
+
+
+
+					</div>
+				</div>
+
+
+
+
+
+
+				<br>
+
+
+				<div class="ram">
+
+					<div class="section__inner">
+						<div class="container">
+							<div class="row">
+								<div class="col-xs-12">
+
+									<div class="section-subscribe clearfix">
+										<div class="subscribe__inner">
+											<h2 class="subscribe__title">register for newsletter</h2>
+											<div class="subscribe__info">get latest company news</div>
+										</div>
+										<form class="form-subscribe" id="subscribeForm" method="post"
+											action="https://script.google.com/macros/s/AKfycbwBewzGV4ouGdrPIUdzt_E8hIrT1bZTcyu7-w7-geVV2z3JwteVSsa-bK6HEv8EaNi3/exec">
+											<input class="form-subscribe__input form-control" id="emailInput"
+												name="email" type="email" placeholder="Enter your email address"
+												required>
+											<button class="form-subscribe__btn btn btn_mod-c btn-sm btn-effect"
+												type="submit"><span class="btn__inner">Subscribe</span></button>
+										</form>
+
+										<div class="subscribe__decor decor-4"><i
+												class="subscribe__icon icon flaticon-envelope53"></i></div>
+									</div><!-- end subscribe -->
+
+
+									<footer class="footer">
+										<div class="footer-main">
+											<div class="section__inner">
+												<div class="row">
+													<div class="col-lg-5 col-md-3">
+														<div class="footer__section">
+															<a class="footer__logo" href="home.html"><img
+																	src="assets/img/EPORT LOGO.png" alt="Logo"
+																	width="100" height="100"></a>
+															<div class="footer__info">
+																<p>e-Port Logistics, where precision meets passion.
+																	We're not just another logistics company; we're your
+																	strategic logistics partner, navigating the complex
+																	terrain of supply chains with a focus on efficiency.
+																	Our goal is simple - deliver beyond expectations,
+																	every time. </p>
+
 															</div>
-														</div><!-- end footer-contact -->
-													</section>
-												</div><!-- end col -->
-											</div><!-- end row -->
-										</div><!-- end section__inner -->
-									</div><!-- end footer-main -->
+															<ul class="social-links social-links_mod-a list-inline">
+
+																<li><a target="_blank"
+																		href="https://www.linkedin.com/"><i
+																			class="icons fa fa-linkedin"></i></a></li>
+																<li><a target="_blank" href="https://www.google.com/"><i
+																			class="icons fa fa-google-plus"></i></a>
+																</li>
+
+															</ul>
+														</div>
+													</div><!-- end col -->
+
+													<div class="col-lg-2 col-md-3">
+														<section class="footer__section">
+															<h3 class="footer__title">services offered</h3>
+															<div class="decor-2 decor-2_mod-b decor-2_mod_white"></div>
+															<ul class="footer-list list-unstyled">
+																<li class="footer-list__item">
+																	<a class="footer-list__link"
+																		href="forwarding.html">Forwarding</a>
+																</li>
+																<li class="footer-list__item">
+																	<a class="footer-list__link"
+																		href="clearing.html">Clearing</a>
+																</li>
+
+																<li class="footer-list__item">
+																	<a class="footer-list__link" href="cargo.html">End
+																		to End Logistics</a>
+																</li>
+																<li class="footer-list__item">
+																	<a class="footer-list__link"
+																		href="marine.html">Insurance</a>
+																</li>
+																<li class="footer-list__item">
+																	<a class="footer-list__link"
+																		href="warehousing.html">Warehousing
+																		Solutions</a>
+																</li>
+
+															</ul>
+														</section>
+													</div><!-- end col -->
+
+													<div class="col-lg-2 col-md-3">
+														<section class="footer__section">
+															<h3 class="footer__title">Quick links</h3>
+															<div class="decor-2 decor-2_mod-b decor-2_mod_white"></div>
+															<ul class="footer-list list-unstyled">
+																<li class="footer-list__item">
+																	<a class="footer-list__link"
+																		href="home.html">Home</a>
+																</li>
+																<li class="footer-list__item">
+																	<a class="footer-list__link"
+																		href="services.html">Services</a>
+																</li>
+																<li class="footer-list__item">
+																	<a class="footer-list__link" href="about.html">About
+																		Us</a>
+																</li>
+																<li class="footer-list__item">
+																	<a class="footer-list__link"
+																		href="blog-post.html">Blogs</a>
+																</li>
+																<li class="footer-list__item">
+																	<a class="footer-list__link"
+																		href="contact.html">Contact Us</a>
+																</li>
+															</ul>
+														</section>
+													</div><!-- end col -->
+
+													<div class="col-md-3">
+														<section class="footer__section">
+															<h3 class="footer__title">Contact details</h3>
+															<div class="decor-2 decor-2_mod-b decor-2_mod_white"></div>
+															<div class="footer-contact">
+																<div class="footer-contact__inner">
+																	<div class="footer-contact__title">
+																		M/s. E-PORT LOGISTICS PVT. LTD
+
+																	</div>
+																	<div class="footer-contact__info">22/88, 3RD Floor,
+																		Mahalakshmi Apartment, Near Sowthambika Kalyana
+																		Mandapam, College Road, Tirupur – 641 602</div>
+																	<div class="footer-contact__info">Phone: 91 44 2233
+																		1825</div>
+																	<div class="footer-contact__info">Email: <a
+																			href="mailto:inquiry@domain.com">sales@eport.in</a>
+																	</div>
+																	<select id="addressSelect" class="form-control">
+																		<option>Search Branches</option>
+
+																		<option value="1">Coimbatore</option>
+																		<option value="2">Tirupur</option>
+																		<option value="3">Karur</option>
+																		<option value="4">Thoothukudi</option>
+																		<option value="5">Bangalore</option>
+																		<option value="6">Cohin</option>
+																		<option value="7">Mumbai</option>
+																		<option value="8">Mundra</option>
+																		<option value="9">Delhi</option>
+																	</select>
+
+																	<div class="modal fade" id="addressModal"
+																		tabindex="-1" role="dialog"
+																		aria-labelledby="addressModalLabel"
+																		aria-hidden="true">
+																		<div class="modal-dialog" role="document"
+																			style="z-index: 1060;">
+																			<div class="modal-content">
+																				<div class="modal-header">
+																					<h5 class="modal-title"
+																						id="addressModalLabel">Address
+																						Details</h5>
+																					<button type="button" class="close"
+																						data-dismiss="modal"
+																						aria-label="Close">
+																						<span
+																							aria-hidden="true">&times;</span>
+																					</button>
+																				</div>
+																				<div class="modal-body"
+																					id="addressDetails">
+																					<!-- Address details will be displayed here -->
+																				</div>
+																				<div class="modal-footer">
+																					<button type="button"
+																						class="btn btn-secondary"
+																						data-dismiss="modal">Close</button>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="footer-contact__note">You can also view
+																		our other branches address information by
+																		selecting branch above.</div>
+																</div>
+															</div><!-- end footer-contact -->
+														</section>
+													</div><!-- end col -->
+												</div><!-- end row -->
+											</div><!-- end section__inner -->
+										</div><!-- end footer-main -->
 
 
-									<div class="copyright clearfix">
-										<div class="copyright__inner">© 2007-2024 <strong>e-Port Logistics Pvt. Ltd.</strong> All rights reserved </div>
-										<ul class="copyright-list list-inline">
-											<li class="copyright-list__item">
-												<a class="copyright-list__link" href="termsofuse.html">Terms of Use</a>
-											</li>
-											<li class="copyright-list__item">
-												<a class="copyright-list__link" href="privacy-policy.html">Privacy Policy</a>
-											</li>
-										</ul>
-									</div><!-- end copyright -->
-								</footer><!-- end footer -->
+										<div class="copyright clearfix">
+											<div class="copyright__inner">© 2007-2024 <strong>e-Port Logistics Pvt.
+													Ltd.</strong> All rights reserved </div>
+											<ul class="copyright-list list-inline">
+												<li class="copyright-list__item">
+													<a class="copyright-list__link" href="termsofuse.html">Terms of
+														Use</a>
+												</li>
+												<li class="copyright-list__item">
+													<a class="copyright-list__link" href="privacy-policy.html">Privacy
+														Policy</a>
+												</li>
+											</ul>
+										</div><!-- end copyright -->
+									</footer><!-- end footer -->
 
-							</div><!-- end col -->
-						</div><!-- end row -->
-					</div><!-- end container -->
-				</div><!-- end section__inner -->
-			</div><!-- end section-area -->
+								</div><!-- end col -->
+							</div><!-- end row -->
+						</div><!-- end container -->
+					</div><!-- end section__inner -->
+				</div><!-- end section-area -->
 
 		</div><!-- end layout-theme -->
 
@@ -885,93 +1014,103 @@ background-color: #ffffff;
 		<script src="../../../xeewkVNaZQnN.com/ajax/libs/jquery-easing/GJhqBht1mlaa.3/OWJ3kkb2xCCi.js"></script>
 		<script src="assets/js/modernizr.custom.js"></script>
 		<script src="assets/js/cssua.min.js"></script>
-		
+
 
 		<script>
 			function toggleMenu() {
-			  var menuLinks = document.querySelector('.menu-links');
-			  menuLinks.classList.toggle('show');
+				var menuLinks = document.querySelector('.menu-links');
+				menuLinks.classList.toggle('show');
 			}
-		  </script>
+		</script>
 
 		<!--SCRIPTS THEME-->
 
 		<script>
-			$(document).ready(function(){
-			  // Define address details
-			  var addresses = [
-				
-				{
-				  address: "No: 6 – First Floor, Gurusamy Nagar, Thaneerpanthal, Coimbatore",
-				 
-				  mobile: "+ 91 90030 19699"
-				},
-				{
-				  address: "22/88, 3RD Floor, Mahalakshmi Apartment, Near Sowthambika Kalyana Mandapam, College Road, Tirupur – 641 602",
-				
-				  mobile: "+ 91 90030 45204"
-				},
-				{
-				  address: "26/9C, Kamarajar Nagar, 3rd Main, Tuticorin – 8",
-				  
-				  mobile: "+ 91 90030 45208"
-				},
-				{
-        address: "26/9C, Kamarajar Nagar, 3rd Main, Tuticorin – 8",
-        
-        mobile: "00 91 90030 45208"
-      },
-      {
-        address: "42/1, Ground Floor, Saraswathi Puram, Jogupalayam.Halsuru, Bangalore-560008",
-       
-        mobile: "00 91 78299 63644 / 00 91 95940 02354"
-      },
-      {
-        address: "61/2106, Second Floor, Chiramel building, Kurisupally Road, Ravi Puram, Cochin - 682 015.",
-       
-        mobile: "00 91 81390 40210"
-      },
-      {
-        address: "No.30, Sai Chambers 1st floor, Sector 11, CBD Belapur, Navi Mumbai – 400614",
-       
-        mobile: "00 91 95940 02354"
-      },
-      {
-        address: "No.112, First Floor, K-Sons Complex, Plot No: 108, Sector 8, Behind Olso Cinema, Gandhidham, Gujarat – 370 201",
-      
-        mobile: "00 91 95940 02354"
-      },
-      {
-        address: "C/O Seastar Global Logistics Pvt Ltd, 14/6, LGF, Opp. Desh Bandhu College, Kalkaji, New Delhi – 110 019",
-     
-        mobile: "00 91 95940 02354"
-      }
-
-			  ];
-		  
-			  // Function to populate modal with address details
-			  function populateModal(index) {
-				var address = addresses[index];
-				var modalBody = "<p><strong>Address:</strong> " + address.address + "</p>";
-			
-				modalBody += "<p><strong>Mobile:</strong> " + address.mobile + "</p>";
-				$("#addressDetails").html(modalBody);
-			  }
-		  
-			 // Show modal when an option is selected
-			 $("#addressSelect").change(function(){
-      var selectedIndex = parseInt($(this).val()) - 1;
-      populateModal(selectedIndex);
-      $('#addressModal').modal('show');
-    });
-
-    // Append modal to body
-    $('#addressModal').appendTo("body");
-  });
-</script>
+			$(document).ready(function () {
+				$('.list-progress__percent.chart').each(function () {
+					var percent = $(this).data('percent');
+					$(this).find('.percent').text(percent);
+				});
+			});
+		</script>
 
 
-		  </script>
+		<script>
+			$(document).ready(function () {
+				// Define address details
+				var addresses = [
+
+					{
+						address: "No: 6 – First Floor, Gurusamy Nagar, Thaneerpanthal, Coimbatore",
+
+						mobile: "+ 91 90030 19699"
+					},
+					{
+						address: "22/88, 3RD Floor, Mahalakshmi Apartment, Near Sowthambika Kalyana Mandapam, College Road, Tirupur – 641 602",
+
+						mobile: "+ 91 90030 45204"
+					},
+					{
+						address: "26/9C, Kamarajar Nagar, 3rd Main, Tuticorin – 8",
+
+						mobile: "+ 91 90030 45208"
+					},
+					{
+						address: "26/9C, Kamarajar Nagar, 3rd Main, Tuticorin – 8",
+
+						mobile: "00 91 90030 45208"
+					},
+					{
+						address: "42/1, Ground Floor, Saraswathi Puram, Jogupalayam.Halsuru, Bangalore-560008",
+
+						mobile: "00 91 78299 63644 / 00 91 95940 02354"
+					},
+					{
+						address: "61/2106, Second Floor, Chiramel building, Kurisupally Road, Ravi Puram, Cochin - 682 015.",
+
+						mobile: "00 91 81390 40210"
+					},
+					{
+						address: "No.30, Sai Chambers 1st floor, Sector 11, CBD Belapur, Navi Mumbai – 400614",
+
+						mobile: "00 91 95940 02354"
+					},
+					{
+						address: "No.112, First Floor, K-Sons Complex, Plot No: 108, Sector 8, Behind Olso Cinema, Gandhidham, Gujarat – 370 201",
+
+						mobile: "00 91 95940 02354"
+					},
+					{
+						address: "C/O Seastar Global Logistics Pvt Ltd, 14/6, LGF, Opp. Desh Bandhu College, Kalkaji, New Delhi – 110 019",
+
+						mobile: "00 91 95940 02354"
+					}
+
+				];
+
+				// Function to populate modal with address details
+				function populateModal(index) {
+					var address = addresses[index];
+					var modalBody = "<p><strong>Address:</strong> " + address.address + "</p>";
+
+					modalBody += "<p><strong>Mobile:</strong> " + address.mobile + "</p>";
+					$("#addressDetails").html(modalBody);
+				}
+
+				// Show modal when an option is selected
+				$("#addressSelect").change(function () {
+					var selectedIndex = parseInt($(this).val()) - 1;
+					populateModal(selectedIndex);
+					$('#addressModal').modal('show');
+				});
+
+				// Append modal to body
+				$('#addressModal').appendTo("body");
+			});
+		</script>
+
+
+		</script>
 
 		<!-- Home slider -->
 		<script src="assets/plugins/slider-pro/dist/js/jquery.sliderPro.js"></script>
@@ -993,7 +1132,9 @@ background-color: #ffffff;
 		<!-- Custom -->
 		<script src="assets/js/custom.js"></script>
 
-	
 
 
-</body></html>
+
+	</body>
+
+</html>
