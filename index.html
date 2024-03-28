@@ -20,6 +20,82 @@
 	<script src="assets/js/modernizr.custom.js"></script>
 
 	<style>
+		.list-progress__item {
+			margin-bottom: 25px;
+		}
+		.list-progress__percent {
+			display: block;
+			margin-bottom: 5px;
+			font: 700 38px/1 'Titillium Web';
+			color: #333;
+			position: relative; /* Added for positioning */
+		}
+		.list-progress__name {
+			display: block;
+			margin-bottom: 23px;
+			font-weight: 400;
+		}
+		.list-progress_left {
+			float: left;
+			margin-left: 30px;
+			text-align: right;
+		}
+		.list-progress_right {
+			float: right;
+			margin-right: 35px;
+		}
+		.list-progress_left,
+		.list-progress_right {
+			position: relative;
+			padding-top: 95px;
+		}
+		.list-progress_left:before,
+		.list-progress_right:before {
+			position: absolute;
+			top: 0;
+			display: block;
+			width: 174px;
+			height: 25px;
+			content: '';
+		}
+		.list-progress_left:before {
+			left: 90px;
+			background: url('../media/decor/arrow-orange_right.png') no-repeat;
+		}
+		.list-progress_right:before {
+			right: 90px;
+			background: url('../media/decor/arrow-orange_left.png') no-repeat;
+		}
+		.list-progress__title-icon {
+			display: inline-block;
+			margin-bottom: 10px;
+			font-size: 24px;
+		}
+		.list-progress_mod-a .list-progress__item:last-child .decor-3 {
+			display: none;
+		}
+		.list-progress_mod-a {
+			margin-bottom: 30px;
+		}
+		.list-progress_mod-b .list-progress__item {
+			display: inline-block;
+			width: 16.6%;
+			margin-right: -3px;
+			padding-right: 10px;
+			padding-left: 10px;
+			vertical-align: top;
+			text-align: center;
+		}
+		.list-progress_mod-b .list-progress__percent {
+			color: #fff;
+		}
+		.list-progress_mod-b .list-progress__name {
+			margin-top: 7px;
+			margin-bottom: 0;
+		}
+	</style>
+
+	<style>
 		body {
 			font-family: 'Ubuntu', sans-serif;
 			margin: 0;
@@ -355,68 +431,62 @@
 								<ul class="list-progress list-progress_mod-a list-progress_left list-unstyled">
 									<li class="list-progress__item clearfix">
 										<div class="list-progress__inner">
-											<span class="list-progress__percent chart" data-percent="986"><span
-													class="percent"></span></span>
+											<span class="list-progress__percent chart" data-percent="936"><span ></span></span>
 											<span class="list-progress__name">Satisfied Clients</span>
 											<div class="decor-3"></div>
 										</div>
 									</li>
 									<li class="list-progress__item clearfix">
 										<div class="list-progress__inner">
-											<span class="list-progress__percent chart" data-percent="67"><span
-													class="percent"></span></span>
+											<span class="list-progress__percent chart" data-percent="67"><span ></span></span>
 											<span class="list-progress__name">Working Team</span>
 											<div class="decor-3"></div>
 										</div>
 									</li>
 									<li class="list-progress__item clearfix">
 										<div class="list-progress__inner">
-											<span class="list-progress__percent chart" data-percent="107"><span
-													class="percent"></span></span>
+											<span class="list-progress__percent chart" data-percent="15"><span ></span></span>
 											<span class="list-progress__name">Years of Experience</span>
 											<div class="decor-3"></div>
 										</div>
 									</li>
 								</ul><!-- end list-progress -->
-
+			
 								<ul class="list-progress list-progress_mod-a list-progress_right list-unstyled">
 									<li class="list-progress__item clearfix">
 										<div class="list-progress__inner">
-											<span class="list-progress__percent chart" data-percent="15360"><span
-													class="percent"></span></span>
+											<span class="list-progress__percent chart" data-percent="15360"><span ></span></span>
 											<span class="list-progress__name">Billing Filed</span>
 											<div class="decor-3"></div>
 										</div>
 									</li>
 									<li class="list-progress__item clearfix">
 										<div class="list-progress__inner">
-											<span class="list-progress__percent chart" data-percent="07"><span
-													class="percent"></span></span>
+											<span class="list-progress__percent chart" data-percent="07"><span ></span></span>
 											<span class="list-progress__name">Our Branches</span>
 											<div class="decor-3"></div>
 										</div>
 									</li>
 									<li class="list-progress__item clearfix">
 										<div class="list-progress__inner">
-											<span class="list-progress__percent chart" data-percent="7683"><span
-													class="percent"></span></span>
+											<span class="list-progress__percent chart" data-percent="7683"><span ></span></span>
 											<span class="list-progress__name">Total Deliveries</span>
 											<div class="decor-3"></div>
 										</div>
 									</li>
 								</ul><!-- end list-progress -->
-
+			
 								<div class="progress-center">
-									<img class="center-block img-responsive" src="assets/img/airplane-png-27939.png"
-										alt="background">
-									<a class="progress-center__link prettyPhoto" href="assets/img/EPORT Video.mp4"><i
-											class="icon fa fa-play"></i></a>
+									<img class="center-block img-responsive" src="assets/img/airplane-png-27939.png" alt="background">
+									<a class="progress-center__link prettyPhoto" href="assets/img/EPORT Video.mp4"><i class="icon fa fa-play"></i></a>
 									<div class="progress-center__title ui-title-inner">watch video</div>
 								</div>
 							</div><!-- end section-progress -->
 						</div><!-- end col -->
 					</div><!-- end row -->
 				</div><!-- end container -->
+			</section>
+			
 
 
 
@@ -1047,9 +1117,31 @@
 		$('#addressModal').appendTo("body");
 	  });
 	</script>
+	<script>
+		document.addEventListener('DOMContentLoaded', function() {
+			var counters = document.querySelectorAll('.list-progress__percent');
+			counters.forEach(function(counter) {
+				var target = parseInt(counter.getAttribute('data-percent'));
+				var current = 0;
+				var increment = 1;
+				var speed = 0.5; // milliseconds
 	
+				var updateCounter = function() {
+					if (current < target) {
+						counter.innerHTML = current;
+						current += increment;
+						setTimeout(updateCounter, speed);
+					} else {
+						counter.innerHTML = target;
+					}
+				};
 	
-			  </script>
+				updateCounter();
+			});
+		});
+	</script>
+	
+		
 	
 			<!-- Home slider -->
 			<script src="assets/plugins/slider-pro/dist/js/jquery.sliderPro.js"></script>
