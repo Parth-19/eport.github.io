@@ -9,62 +9,74 @@
 		<script src="assets/plugins/jquery/jquery-1.11.3.min.js"></script>
 		<script src="assets/js/modernizr.custom.js"></script>
 		<style>
-	..box {
-    padding: 40px 0;
-}
-
-.box .container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.box .row {
-    display: flex;
-    flex-wrap: wrap; /* Ensure the cards wrap to the next line if space is insufficient */
-    justify-content: space-between; /* Ensure equal space between columns */
-}
-
-.box .col-lg-4 {
-    width: calc(33.33% - 20px); /* Adjust width for each column (minus margin) */
-    margin-bottom: 20px; /* Adjust margin as needed */
-	margin-right: 20px;
-}
-
-.box-part {
-    background: #fff;
-    padding: 20px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    height: 300px; /* Fixed height for the cards */
-}
-
-.box-part .title h4 {
-    font-size: 18px;
-    font-weight: 700;
-    margin-bottom: 15px;
-}
-
-.box-part .text {
-    line-height: 24px;
-    font-size: 14px;
-}
-
-.box-part i {
-    margin-bottom: 15px;
-    font-size: 30px;
-    color: #0090D7;
-    display: block;
-    margin: 0 auto;
-}
-
-/* Responsive styles */
-@media (max-width: 768px) {
-    .box .col-lg-4 {
-        width: calc(50% - 20px); /* Two columns for smaller screens */
-    }
-}
-
-
+			.box {
+				padding: 40px 0;
+			}
+		
+			.box .container {
+				max-width: 1200px;
+				margin: 0 auto;
+			}
+		
+			.box .row {
+				display: flex;
+				flex-wrap: wrap; /* Ensure the cards wrap to the next line if space is insufficient */
+				justify-content: space-between; /* Ensure equal space between columns */
+			}
+		
+			.box .col-lg-4 {
+				width: calc(33.33% - 20px); /* Adjust width for each column (minus margin) */
+				margin-bottom: 20px; /* Adjust margin as needed */
+				margin-right: 20px;
+			}
+		
+			.box-part {
+				background: #fff;
+				padding: 20px;
+				box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+				height: 310px; /* Fixed height for the cards */
+			}
+		
+			.box-part .title h4 {
+				font-size: 18px;
+				font-weight: 700;
+				margin-bottom: 15px;
+			}
+		
+			.box-part .text {
+				line-height: 24px;
+				font-size: 14px;
+			}
+		
+			.box-part i {
+				margin-bottom: 15px;
+				font-size: 30px;
+				color: #0090D7;
+				display: block;
+				margin: 0 auto;
+			}
+		
+			/* Responsive styles */
+			@media (max-width: 1200px) {
+				.box .col-lg-4 {
+					width: calc(33.33% - 20px); /* Three columns for larger screens */
+				}
+			}
+		
+			@media (max-width: 768px) {
+				.box .col-lg-4 {
+					width: calc(50% - 20px); /* Two columns for medium screens */
+				}
+			}
+		
+			@media (max-width: 576px) {
+				.box .col-lg-4 {
+					width: calc(100% - 20px); /* Single column for smaller screens */
+					margin-right: 0; /* Remove right margin for single column */
+				}
+			}
 		</style>
+		
 
 		<style>
 			.marquee {
@@ -767,8 +779,7 @@ background-color: #ffffff;
 																	M/s. E-PORT LOGISTICS PVT. LTD
 																	
 																	</div>
-																<div class="footer-contact__info">4/164, F8/9, K.T.C. NAGAR,
-																	STATE BANK COLONY (NORTH), TUTICORIN – 628002</div>
+																<div class="footer-contact__info">22/88, 3RD Floor, Mahalakshmi Apartment, Near Sowthambika Kalyana Mandapam, College Road, Tirupur – 641 602</div>
 																<div class="footer-contact__info">Phone: 91 44 2233 1825</div>
 																<div class="footer-contact__info">Email: <a href="mailto:inquiry@domain.com">sales@eport.in</a></div>
 																<select id="addressSelect" class="form-control">
