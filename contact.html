@@ -240,8 +240,7 @@
                                                     </div>
                                                     <ul class="social-links social-links_mod-a list-inline">
                                                         
-                                                        <li><a target="_blank" href="https://www.linkedin.com/"><i class="icons fa fa-linkedin"></i></a></li>
-                                                        <li><a target="_blank" href="https://www.google.com/"><i class="icons fa fa-google-plus"></i></a></li>
+                                                        <li><a target="_blank" href="https://www.linkedin.com/company/e-port-logistics-private-limited/?viewAsMember=true"><i class="icons fa fa-linkedin"></i></a></li>
                                                         
                                                     </ul>
                                                 </div>
@@ -307,9 +306,8 @@
                                                                 M/s. E-PORT LOGISTICS PVT. LTD
                                                                 
                                                                 </div>
-                                                            <div class="footer-contact__info">4/164, F8/9, K.T.C. NAGAR,
-                                                                STATE BANK COLONY (NORTH), TUTICORIN – 628002</div>
-                                                            <div class="footer-contact__info">Phone: 91 44 2233 1825</div>
+                                                            <div class="footer-contact__info"><strong>Address: </strong>30/10, PRIME PLAZA KRE LAYOUT COLLEGE ROAD, TIRUPUR, INDIA- 641602 <br> <strong>GSTIN NO.: 33AACCE0108N1ZZ</strong></div>
+                                                        
                                                             <div class="footer-contact__info">Email: <a href="mailto:inquiry@domain.com">sales@eport.in</a></div>
                                                             <select id="addressSelect" class="form-control">
                                                                 <option >Search Branches</option>
@@ -317,7 +315,7 @@
                                                                 <option value="1">Coimbatore</option>
                                                                 <option value="2">Tirupur</option>
                                                                 <option value="3">Karur</option>
-                                                                <option value="4">Thoothukudi</option>
+                                                                <option value="4">Tuticorin</option>
                                                                 <option value="5">Bangalore</option>
                                                                 <option value="6">Cohin</option>
                                                                 <option value="7">Mumbai</option>
@@ -354,7 +352,7 @@
 
 
                                 <div class="copyright clearfix">
-                                    <div class="copyright__inner">© 2007-2024 <strong>e-Port Logistics Pvt. Ltd.</strong> All rights reserved </div>
+                                    <div class="copyright__inner">© 2007-2025 <strong>e-Port Logistics Pvt. Ltd.</strong> All rights reserved </div>
                                     <ul class="copyright-list list-inline">
                                         <li class="copyright-list__item">
                                             <a class="copyright-list__link" href="termsofuse.html">Terms of Use</a>
@@ -405,44 +403,45 @@
               mobile: "+ 91 90030 19699"
             },
             {
-              address: "22/88, 3RD Floor, Mahalakshmi Apartment, Near Sowthambika Kalyana Mandapam, College Road, Tirupur – 641 602",
+              address: "30/10, PRIME PLAZA KRE LAYOUT COLLEGE ROAD, TIRUPUR, INDIA - 641602",
+
             
-              mobile: "+ 91 90030 45204"
+              mobile: "+ 91 90030 45203"
             },
             {
-              address: "26/9C, Kamarajar Nagar, 3rd Main, Tuticorin – 8",
+              address: "4/164, F8/9, K.T.C. NAGAR, STATE BANK COLONY (NORTH), TUTICORIN – 628002",
               
               mobile: "+ 91 90030 45208"
             },
             {
-    address: "26/9C, Kamarajar Nagar, 3rd Main, Tuticorin – 8",
+    address: "4/164, F8/9, K.T.C. NAGAR, STATE BANK COLONY (NORTH), TUTICORIN – 628002",
     
-    mobile: "00 91 90030 45208"
+    mobile: " 91 90030 45208"
   },
   {
     address: "42/1, Ground Floor, Saraswathi Puram, Jogupalayam.Halsuru, Bangalore-560008",
    
-    mobile: "00 91 78299 63644 / 00 91 95940 02354"
+    mobile: " 91 78299 63644 / 00 91 95940 02354"
   },
   {
     address: "61/2106, Second Floor, Chiramel building, Kurisupally Road, Ravi Puram, Cochin - 682 015.",
    
-    mobile: "00 91 81390 40210"
+    mobile: "+91 9003 045 204"
   },
   {
     address: "No.30, Sai Chambers 1st floor, Sector 11, CBD Belapur, Navi Mumbai – 400614",
    
-    mobile: "00 91 95940 02354"
+    mobile: " 91 95940 02354"
   },
   {
     address: "No.112, First Floor, K-Sons Complex, Plot No: 108, Sector 8, Behind Olso Cinema, Gandhidham, Gujarat – 370 201",
   
-    mobile: "00 91 95940 02354"
+    mobile: " 91 95940 02354"
   },
   {
     address: "C/O Seastar Global Logistics Pvt Ltd, 14/6, LGF, Opp. Desh Bandhu College, Kalkaji, New Delhi – 110 019",
  
-    mobile: "00 91 95940 02354"
+    mobile: " 91 95940 02354"
   }
 
           ];
@@ -467,9 +466,31 @@
 $('#addressModal').appendTo("body");
 });
 </script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var counters = document.querySelectorAll('.list-progress__percent');
+    counters.forEach(function(counter) {
+        var target = parseInt(counter.getAttribute('data-percent'));
+        var current = 0;
+        var increment = 1;
+        var speed = 0.5; // milliseconds
+
+        var updateCounter = function() {
+            if (current < target) {
+                counter.innerHTML = current;
+                current += increment;
+                setTimeout(updateCounter, speed);
+            } else {
+                counter.innerHTML = target;
+            }
+        };
+
+        updateCounter();
+    });
+});
+</script>
 
 
-      </script>
 
     <!-- Home slider -->
     <script src="assets/plugins/slider-pro/dist/js/jquery.sliderPro.js"></script>
